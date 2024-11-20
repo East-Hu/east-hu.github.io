@@ -45,6 +45,12 @@ redirect_from:
 
 <span style="font-family: 'EB Garamond', serif;">Individual Bronze Medal in the 8th China Group Programming Ladder Tournament</span>
 
+<span style="font-family: 'EB Garamond', serif;">Team Bronze Medal in the 7th China Group Programming Ladder Tournament</span>
+
+<span style="font-family: 'EB Garamond', serif;">Team Bronze Medal in the 6th China Group Programming Ladder Tournament</span>
+
+<span style="font-family: 'EB Garamond', serif;">Individual Bronze Medal in the 8th China Group Programming Ladder Tournament</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 2023 Zhejiang Provincial Collegiate Programming Contest</span>
 
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 2022 Zhejiang Provincial Collegiate Programming Contest</span>
