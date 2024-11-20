@@ -40,6 +40,7 @@ redirect_from:
 
 🙏  Honors & Awards
 ------
+<span style="font-family: 'EB Garamond', serif;">*June 2024* Graduation Honorary Certificate, granted by Zhejiang University</span>
 
 <br><br>
 
