@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<span style="font-family: 'EB Garamond', serif;">I am currently a first-year PhD student in Computer Science at Georgia State University, under the guidance of Assistant Professor [Qin Hu](https://qinhu2010.github.io/). Prior to this, I was a member of the Qiushi Class (求是班) at NingboTech University, where I was mentored by Professor [Chaoyi Pang](https://scholar.google.com.au/citations?user=PZZ9jIEAAAAJ&hl=en). </span>
+<span style="font-family: 'EB Garamond', serif;">Hello! I am currently a first-year PhD student in Computer Science at Georgia State University, under the guidance of Assistant Professor [Qin Hu](https://qinhu2010.github.io/). Prior to this, I was a member of the Qiushi Class (求是班) at NingboTech University, where I was mentored by Professor [Chaoyi Pang](https://scholar.google.com.au/citations?user=PZZ9jIEAAAAJ&hl=en). </span>
 
 <span style="font-family: 'EB Garamond', serif;">During my undergraduate years, I conducted research in foundational algorithms, particularly focusing on number theory, graph theory, and computational geometry. I also represented my university in several international programming competitions (ICPC), earning various awards.</span>
 
