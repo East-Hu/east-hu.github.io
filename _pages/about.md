@@ -68,9 +68,9 @@ redirect_from:
 ------
 <span style="font-family: 'EB Garamond', serif;">- ***September 2024***: I accepted an offer from GSU and look forward to five years of research life.</span>  
 
-<span style="font-family: 'EB Garamond', serif;">- ***June 2024***: Conducted meaningful research in Computer Vision, significantly improving both my technical expertise and research capabilities while broadening my understanding of the field.</span>
+<span style="font-family: 'EB Garamond', serif;">- ***June 2024***: I graduated from NingboTech University and am happy to have spent four years there..</span>
 
-<span style="font-family: 'EB Garamond', serif;">- ***Sep – Dec 2023***: I graduated from NingboTech University and am happy to have spent four years there.</span>
+<span style="font-family: 'EB Garamond', serif;">- ***Sep – Dec 2023***: Conducted meaningful research in Computer Vision, significantly improving both my technical expertise and research capabilities while broadening my understanding of the field</span>
 
 <span style="font-family: 'EB Garamond', serif;">- ***July – August 2023***: Participated in a summer school at Queen's University, Belfast—a perfect journey.</span>
 
