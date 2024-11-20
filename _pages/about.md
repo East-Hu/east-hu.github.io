@@ -12,17 +12,20 @@ redirect_from:
 <span style="font-family: 'EB Garamond', serif;">During my undergraduate years, I conducted research in foundational algorithms and represented my university in several international programming competitions (ICPC), earning various awards.</span>
 
 <span style="font-family: 'EB Garamond', serif;">You can download my CV in [here](assets/cv.pdf)</span>  
-
+<br><br>
 
 
 🖥️  Current Research Interests
 ======
 <span style="font-family: 'EB Garamond', serif;">- Wireless and mobile security  </span>
+
 <span style="font-family: 'EB Garamond', serif;">- Blockchain </span> 
+
 <span style="font-family: 'EB Garamond', serif;">- Edge computing </span> 
+
 <span style="font-family: 'EB Garamond', serif;">- Federated learning</span> 
 
-
+<br><br>
 
 🏫  Education
 ======
@@ -32,12 +35,12 @@ redirect_from:
 <span style="font-family: 'EB Garamond', serif;">- **BSc in Computer Science and Technology**, NingboTech University</span>  
   <span style="font-family: 'EB Garamond', serif;">*September 2020 – June 2024*</span>
 
-  
+<br><br>  
 
 🙏  Honors & Awards
 ------
 
-
+<br><br>
 
 📰  Latest News
 ------
@@ -45,7 +48,7 @@ redirect_from:
 <span style="font-family: 'EB Garamond', serif;">- ***June 2024***: I graduated from NingboTech University and am happy to have spent four years there.</span>  
 <span style="font-family: 'EB Garamond', serif;">- ***July – August 2023***: Participated in a summer school at Queen's University, Belfast—a perfect journey.</span> 
 
-
+<br><br>
 
 🙏  Collaboration
 ------
