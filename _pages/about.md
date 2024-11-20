@@ -40,15 +40,25 @@ redirect_from:
 🙏  Honors & Awards
 ------
 <span style="font-family: 'EB Garamond', serif;">Graduation Honorary Certificate, granted by Zhejiang University</span>
+
 <span style="font-family: 'EB Garamond', serif;">Team Silver Medal in the 8th China Group Programming Ladder Tournament</span>
+
 <span style="font-family: 'EB Garamond', serif;">Individual Bronze Medal in the 8th China Group Programming Ladder Tournament</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 2023 Zhejiang Provincial Collegiate Programming Contest</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 2022 Zhejiang Provincial Collegiate Programming Contest</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 47th International Collegiate Programming Contest, Nanjing Site Contest</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 47th International Collegiate Programming Contest, Jinan Site Contest</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the 46th International Collegiate Programming Contest, Kunming Site Contest</span>
+
 <span style="font-family: 'EB Garamond', serif;">Bronze Medal in the China Collegiate Programming Contest, Weihai Site Contest</span>
+
 <span style="font-family: 'EB Garamond', serif;">Third Place in the 200-meter Race at NingboTech University Championship 2020</span>
+
 <span style="font-family: 'EB Garamond', serif;">NingboTech University Third-class Scholarship 2021-2023</span>
 
 
