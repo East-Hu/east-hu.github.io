@@ -39,31 +39,31 @@ redirect_from:
 
 🙏  Honors & Awards
 ------
-<span style="font-family: 'EB Garamond', serif;">***Graduation Honorary Certificate***, granted by Zhejiang University</span>
+<span style="font-family: 'EB Garamond', serif;">**Graduation Honorary Certificate**, granted by Zhejiang University</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Team Silver Medal*** in the 8th China Group Programming Ladder Tournament</span>
+<span style="font-family: 'EB Garamond', serif;">**Team Silver Medal** in the 8th China Group Programming Ladder Tournament</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Individual Bronze Medal*** in the 8th China Group Programming Ladder Tournament</span>
+<span style="font-family: 'EB Garamond', serif;">**Individual Bronze Medal** in the 8th China Group Programming Ladder Tournament</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Team Bronze Medal*** in the 7th China Group Programming Ladder Tournament</span>
+<span style="font-family: 'EB Garamond', serif;">**Team Bronze Medal** in the 7th China Group Programming Ladder Tournament</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Team Bronze Medal*** in the 6th China Group Programming Ladder Tournament</span>
+<span style="font-family: 'EB Garamond', serif;">**Team Bronze Medal** in the 6th China Group Programming Ladder Tournament</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Individual Bronze Medal*** in the 6th China Group Programming Ladder Tournament</span>
+<span style="font-family: 'EB Garamond', serif;">**Individual Bronze Medal** in the 6th China Group Programming Ladder Tournament</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Bronze Medal*** in the 2023 Zhejiang Provincial Collegiate Programming Contest</span>
+<span style="font-family: 'EB Garamond', serif;">**Bronze Medal** in the 2023 Zhejiang Provincial Collegiate Programming Contest</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Bronze Medal*** in the 2022 Zhejiang Provincial Collegiate Programming Contest</span>
+<span style="font-family: 'EB Garamond', serif;">**Bronze Medal** in the 2022 Zhejiang Provincial Collegiate Programming Contest</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Bronze Medal*** in the 47th ICPC, Nanjing Site Contest</span>
+<span style="font-family: 'EB Garamond', serif;">**Bronze Medal** in the 47th ICPC, Nanjing Site Contest</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Bronze Medal*** in the 47th ICPC, Jinan Site Contest</span>
+<span style="font-family: 'EB Garamond', serif;">**Bronze Medal** in the 47th ICPC, Jinan Site Contest</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Bronze Medal*** in the 46th ICPC, Kunming Site Contest</span>
+<span style="font-family: 'EB Garamond', serif;">**Bronze Medal** in the 46th ICPC, Kunming Site Contest</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Bronze Medal*** in the CCPC, Weihai Site Contest</span>
+<span style="font-family: 'EB Garamond', serif;">**Bronze Medal** in the CCPC, Weihai Site Contest</span>
 
-<span style="font-family: 'EB Garamond', serif;">***Third Place*** in the 200-meter Race at NingboTech University Championship 2020</span>
+<span style="font-family: 'EB Garamond', serif;">**Third Place** in the 200-meter Race at NingboTech University Championship 2020</span>
 
 <span style="font-family: 'EB Garamond', serif;">***Third-class Scholarship***, granted by NingboTech University</span>
 
@@ -72,15 +72,15 @@ redirect_from:
 
 📰  Latest News
 ------
-<span style="font-family: 'EB Garamond', serif;">- ***September 2024***: I accepted an offer from GSU and look forward to the next five years of research life.</span>  
+<span style="font-family: 'EB Garamond', serif;">***September 2024***: I accepted an offer from GSU and look forward to the next five years of research life.</span>  
 
-<span style="font-family: 'EB Garamond', serif;">- ***June 2024***: Completed Bachelor's degree and graduated from NingboTech University.</span>
+<span style="font-family: 'EB Garamond', serif;">***June 2024***: Completed Bachelor's degree and graduated from NingboTech University.</span>
 
-<span style="font-family: 'EB Garamond', serif;">- ***Sep – Dec 2023***: Conducted meaningful research in Computer Vision, significantly improving both my technical expertise and research capabilities while broadening my understanding of the field</span>
+<span style="font-family: 'EB Garamond', serif;">***Sep – Dec 2023***: Conducted meaningful research in Computer Vision, significantly improving both my technical expertise and research capabilities while broadening my understanding of the field</span>
 
-<span style="font-family: 'EB Garamond', serif;">- ***July – August 2023***: Participated in a summer school at Queen's University, Belfast.</span>
+<span style="font-family: 'EB Garamond', serif;">***July – August 2023***: Participated in a summer school at Queen's University, Belfast.</span>
 
-<span style="font-family: 'EB Garamond', serif;">- ***August 2023***: Completed "How to Be an Innovator Course" offered by VentureFolk and received certification.</span> 
+<span style="font-family: 'EB Garamond', serif;">***August 2023***: Completed "How to Be an Innovator Course" offered by VentureFolk and received certification.</span> 
 
 
 <br><br>
