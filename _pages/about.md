@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋 Short Bio"
+title: "👋  Short Bio"
 author_profile: true
 redirect_from: 
   - /about/
@@ -13,14 +13,18 @@ redirect_from:
 
 <span style="font-family: 'EB Garamond', serif;">You can download my CV in [here](assets/cv.pdf)</span>  
 
-🖥️ Current Research Interests
-======
-<span style="font-family: 'EB Garamond', serif;">- Wireless and mobile security  
-- Blockchain  
-- Edge computing  
-- Federated learning</span> 
 
-🏫 Education
+
+🖥️  Current Research Interests
+======
+<span style="font-family: 'EB Garamond', serif;">- Wireless and mobile security  </span>
+<span style="font-family: 'EB Garamond', serif;">- Blockchain </span> 
+<span style="font-family: 'EB Garamond', serif;">- Edge computing </span> 
+<span style="font-family: 'EB Garamond', serif;">- Federated learning</span> 
+
+
+
+🏫  Education
 ======
 <span style="font-family: 'EB Garamond', serif;">- **PhD in Computer Science**, Georgia State University</span>  
   <span style="font-family: 'EB Garamond', serif;">*January 2025 – May 2030 (Expected)*</span>  
@@ -28,16 +32,21 @@ redirect_from:
 <span style="font-family: 'EB Garamond', serif;">- **BSc in Computer Science and Technology**, NingboTech University</span>  
   <span style="font-family: 'EB Garamond', serif;">*September 2020 – June 2024*</span>
 
-🙏 Honors & Awards
+  
+
+🙏  Honors & Awards
 ------
 
 
-📰 Latest News
-------
-<span style="font-family: 'EB Garamond', serif;">- *September 2024*: I accepted an offer from GSU and look forward to five years of research life.</span>  
-<span style="font-family: 'EB Garamond', serif;">- *June 2024*: I graduated from NingboTech University and am happy to have spent four years there.</span>  
-<span style="font-family: 'EB Garamond', serif;">- *July – August 2023*: Participated in a summer school at Queen's University, Belfast—a perfect journey.</span> 
 
-🙏 Collaboration
+📰  Latest News
+------
+<span style="font-family: 'EB Garamond', serif;">- ***September 2024***: I accepted an offer from GSU and look forward to five years of research life.</span>  
+<span style="font-family: 'EB Garamond', serif;">- ***June 2024***: I graduated from NingboTech University and am happy to have spent four years there.</span>  
+<span style="font-family: 'EB Garamond', serif;">- ***July – August 2023***: Participated in a summer school at Queen's University, Belfast—a perfect journey.</span> 
+
+
+
+🙏  Collaboration
 ------
 <span style="font-family: 'EB Garamond', serif;">If you are a researcher interested in collaborating, please feel free to contact me at [xhu20@student.gsu.edu](mailto:xhu20@student.gsu.edu).</span>  
