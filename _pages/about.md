@@ -32,7 +32,7 @@ redirect_from:
 <span style="font-family: 'EB Garamond', serif;">- **PhD in Computer Science**, Georgia State University</span>  
   <span style="font-family: 'EB Garamond', serif;">*January 2025 – May 2030 (Expected)*</span>  
   
-<span style="font-family: 'EB Garamond', serif;">- **BSc in Computer Science and Technology**, NingboTech University</span>  
+<span style="font-family: 'EB Garamond', serif;">- **BEng in Computer Science and Technology**, NingboTech University</span>  
   <span style="font-family: 'EB Garamond', serif;">*September 2020 – June 2024*</span>
 
 <br><br>  
