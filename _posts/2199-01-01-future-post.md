@@ -4,9 +4,7 @@ date: 2022-04-01
 use_math: true
 permalink: /posts/2013/08/blog-post-2/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - solution
 ---
 {% if page.use_math %}  
 <script type="text/javascript" id="MathJax-script" async  
