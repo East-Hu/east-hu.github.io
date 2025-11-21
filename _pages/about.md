@@ -15,11 +15,11 @@ redirect_from:
 
 🖥️  Current Research Interests
 ======
+<span style="font-family: 'EB Garamond', serif;">- LLMs Security and privacy  </span>
+
 <span style="font-family: 'EB Garamond', serif;">- Wireless and mobile security  </span>
 
 <span style="font-family: 'EB Garamond', serif;">- Blockchain </span> 
-
-<span style="font-family: 'EB Garamond', serif;">- Edge computing </span> 
 
 <span style="font-family: 'EB Garamond', serif;">- Federated learning</span> 
 
