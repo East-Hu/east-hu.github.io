@@ -9,7 +9,7 @@ redirect_from:
 
 <span style="font-family: 'EB Garamond', serif;">Hello! I am currently a first-year PhD student in Computer Science at Georgia State University, under the guidance of Assistant Professor [Qin Hu](https://qinhu2010.github.io/). Prior to this, I was a member of the Qiushi Class (求是班) at NingboTech University, where I was mentored by Professor [Chaoyi Pang](https://scholar.google.com.au/citations?user=PZZ9jIEAAAAJ&hl=en). </span>
 
-<span style="font-family: 'EB Garamond', serif;">During my undergraduate years, I conducted research in foundational algorithms, particularly focusing on number theory, graph theory, and computational geometry. I also represented my university in several international programming competitions (ICPC), earning various awards.</span>
+<span style="font-family: 'EB Garamond', serif;">During my undergraduate years, I conducted research in fundamental algorithms, particularly focusing on number theory, graph theory, and computational geometry. I also represented my university in several international programming competitions (ICPC), earning various awards.</span>
 <br><br>
 
 
@@ -17,21 +17,27 @@ redirect_from:
 ======
 <span style="font-family: 'EB Garamond', serif;">- LLMs Security and privacy  </span>
 
-<span style="font-family: 'EB Garamond', serif;">- Wireless and mobile security  </span>
+<span style="font-family: 'EB Garamond', serif;">- Trustworthy AI </span>
 
-<span style="font-family: 'EB Garamond', serif;">- Blockchain </span> 
+<span style="font-family: 'EB Garamond', serif;">- 3d visison/reconstruction  </span>
 
-<span style="font-family: 'EB Garamond', serif;">- Federated learning</span> 
+<span style="font-family: 'EB Garamond', serif;">- Fundamental Algorithms</span> 
 
 <br><br>
 
 🏫  Education
 ======
-<span style="font-family: 'EB Garamond', serif;">- **PhD in Computer Science**, Georgia State University</span>  
-  <span style="font-family: 'EB Garamond', serif;">*January 2025 – May 2030 (Expected)*</span>  
+<span style="font-family: 'EB Garamond', serif;">- **Ph.D in Computer Science**, Georgia State University</span>  
+  <span style="font-family: 'EB Garamond', serif;">*January 2025 – May 2030 (Expected)*</span>
+
+<span style="font-family: 'EB Garamond', serif;">- **Online Master of Science in Computer Science**, Georgia Institute of Technology</span>  
+  <span style="font-family: 'EB Garamond', serif;">*January 2026 – May 2028 (Expected)*</span>    
   
 <span style="font-family: 'EB Garamond', serif;">- **BEng in Computer Science and Technology**, NingboTech University</span>  
   <span style="font-family: 'EB Garamond', serif;">*September 2020 – June 2024*</span>
+
+<span style="font-family: 'EB Garamond', serif;">- **Summer School**, Queen's University Belfast</span>  
+  <span style="font-family: 'EB Garamond', serif;">*July 2023 – Aug 2023 (Expected)*</span>  
 
 <br><br>  
 
