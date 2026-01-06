@@ -76,6 +76,10 @@ redirect_from:
 
 📰  Latest News
 ------
+<span style="font-family: 'EB Garamond', serif;">***January 2026***: One paper was submitted to the ACL 2026!</span>  
+
+<span style="font-family: 'EB Garamond', serif;">***September 2025***: One paper was submitted to the IEEE Internet of Things Journal!</span>  
+
 <span style="font-family: 'EB Garamond', serif;">***September 2024***: I accepted an offer from GSU and look forward to the next five years of research life.</span>  
 
 <span style="font-family: 'EB Garamond', serif;">***June 2024***: Completed Bachelor's degree and graduated from NingboTech University.</span>
