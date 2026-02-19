@@ -33,7 +33,7 @@ sections:
       subtitle: ''
       text: |-
         - **May 2026**: Started Ph.D program at University of Georgia under Prof. Jian Liu!
-        - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science (GPA: 4.0/4.0)!
+        - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science!
         - **January 2026**: One paper (GAMBIT) was submitted to ACL 2026!
         - **September 2025**: One paper (BHFL) was submitted to IEEE Internet of Things Journal!
         - **January 2025**: Started M.S. program at Georgia State University.
@@ -70,19 +70,19 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
-    id: projects
-    content:
-      title: '💻 Open Source Projects'
-      subtitle: ''
-      text: |-
-        ### PaperSeek: Agentic Research Assistant
-        *Nov 2025 - Present* | [GitHub](https://github.com/East-Hu/PaperSeek)
-        - Designed a CLI-first, agentic research tool leveraging LLMs for intelligent literature summarization
-        - Implemented multi-source retrieval pipeline (ArXiv, Semantic Scholar) with robust rate-limiting
-        - Achieved **13.9x speedup** in literature acquisition through structured prompting strategies
-    design:
-      columns: '1'
+  # - block: markdown
+  #   id: projects
+  #   content:
+  #     title: '💻 Open Source Projects'
+  #     subtitle: ''
+  #     text: |-
+  #       ### PaperSeek: Agentic Research Assistant
+  #       *Nov 2025 - Present* | [GitHub](https://github.com/East-Hu/PaperSeek)
+  #       - Designed a CLI-first, agentic research tool leveraging LLMs for intelligent literature summarization
+  #       - Implemented multi-source retrieval pipeline (ArXiv, Semantic Scholar) with robust rate-limiting
+  #       - Achieved **13.9x speedup** in literature acquisition through structured prompting strategies
+  #   design:
+  #     columns: '1'
 
   - block: markdown
     id: teaching
