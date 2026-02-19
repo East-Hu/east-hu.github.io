@@ -4,10 +4,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <!-- Override favicon with wave emoji -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>" type="image/svg+xml">
 <script>
-document.querySelectorAll("link[rel*='icon']").forEach(function(el, i, list) {
-  if (i < list.length - 1) el.remove();
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll("link[rel*='icon']").forEach(function(el) { el.remove(); });
+  var link = document.createElement('link');
+  link.rel = 'icon';
+  link.type = 'image/png';
+  link.href = '/media/icon.png';
+  document.head.appendChild(link);
 });
 </script>
 
