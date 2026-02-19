@@ -52,14 +52,3 @@ h1[class*="font-bold"] {
 }
 </style>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Replace "Professional Summary" with "About Me"
-  const headings = document.querySelectorAll('h2, h3, h4');
-  headings.forEach(function(h) {
-    if (h.textContent.trim() === 'Professional Summary') {
-      h.textContent = 'About Me';
-    }
-  });
-});
-</script>
