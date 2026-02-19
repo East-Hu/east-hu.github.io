@@ -103,7 +103,7 @@ sections:
       title: '🏆 Honors & Awards'
       subtitle: ''
       text: |-
-        <p style="font-size: 0.9rem;"><em>"I dedicated most of my undergraduate years to competitive programming. While the awards I earned during my four years as an ACMer were limited, the friends I made along the way are my greatest treasure."</em></p>
+        <p style="font-size: 0.9rem;"><em>"I dedicated most of my undergraduate years to competitive programming. While the awards I earned during my four years as an ACMer were limited, the friends and experiences I made along the way are my greatest treasure."</em></p>
 
         - **Graduation Honorary Certificate** - Zhejiang University (2024)
         - **Team Silver Medal** - 8th China Group Programming Ladder Tournament (2023)
