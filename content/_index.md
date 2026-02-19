@@ -47,14 +47,14 @@ sections:
       title: '🔬 Research Experience'
       subtitle: ''
       text: |-
-        ## GAMBIT: Gamified Jailbreak Framework for Multimodal LLMs
+        #### GAMBIT: Gamified Jailbreak Framework for Multimodal LLMs
         *Georgia State University, INSPIRE Lab*
         - Proposed a novel framework utilizing 'Puzzle-based Multimodal Encoding' to disrupt visual semantic filters
         - Identified and formalized the 'Safety-Complexity Trade-off' in Multimodal LLMs
         - Achieved state-of-the-art Attack Success Rates (ASR) on popular models
         - **Submitted to ACL 2026** | [arXiv](https://arxiv.org/abs/2601.03416)
 
-        ## Straggler Mitigation in Blockchain-based Hierarchical Federated Learning
+        #### Straggler Mitigation in Blockchain-based Hierarchical Federated Learning
         *Georgia State University, INSPIRE Lab*
         - Proposed a decentralized BHFL framework utilizing Raft-based consortium blockchain
         - Designed 'HieAvg', a novel hierarchical averaging algorithm with theoretical convergence proof
