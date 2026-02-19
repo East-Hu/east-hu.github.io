@@ -67,3 +67,13 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+# ============================================================================
+# Local Files (not for deployment)
+# ============================================================================
+
+# Old site backup
+east-hu.github.io/
+
+# Source CV file (PDF is in static/uploads/)
+*.docx

@@ -1,21 +1,17 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 summary: ''
 date: 2022-10-24
 type: landing
 
 design:
-  # Default section spacing
   spacing: '6rem'
 
 sections:
   - block: resume-biography-3
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
         url: uploads/resume.pdf
@@ -24,31 +20,128 @@ sections:
         education: ''
         interests: ''
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
           enable: true
-
-      # Name heading sizing to accommodate long or short names
       name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
+        size: md
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: medium
+        shape: circle
+
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '🖥️ Research Interests'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        - **LLM Security & Privacy** - Exploring vulnerabilities and defense mechanisms in large language models
+        - **Trustworthy AI** - Building reliable and safe AI systems
+        - **3D Vision/Reconstruction** - Computer vision applications in 3D understanding
+        - **Federated Learning** - Distributed machine learning with privacy preservation
     design:
       columns: '1'
+
+  - block: markdown
+    id: news
+    content:
+      title: '📰 Latest News'
+      subtitle: ''
+      text: |-
+        - **May 2026**: Started Ph.D program at University of Georgia under Prof. Jian Liu!
+        - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science (GPA: 4.0/4.0)!
+        - **January 2026**: One paper (GAMBIT) was submitted to ACL 2026!
+        - **September 2025**: One paper (BHFL) was submitted to IEEE Internet of Things Journal!
+        - **June 2025**: Joined INSPIRE Lab at GSU as Ph.D student.
+        - **January 2025**: Started M.S. program at Georgia State University.
+        - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University.
+        - **Sep – Dec 2023**: Research internship at Zhejiang Lab on 3D character reconstruction (NOVA-3D).
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: research
+    content:
+      title: '🔬 Research Experience'
+      subtitle: ''
+      text: |-
+        ### GAMBIT: Gamified Jailbreak Framework for Multimodal LLMs
+        *Georgia State University, INSPIRE Lab | Jun 2025 - Present*
+        - Proposed a novel framework utilizing 'Puzzle-based Multimodal Encoding' to disrupt visual semantic filters
+        - Identified and formalized the 'Safety-Complexity Trade-off' in Multimodal LLMs
+        - Achieved state-of-the-art Attack Success Rates (ASR) on popular models
+        - **Submitted to ACL 2026** | [arXiv](https://arxiv.org/)
+
+        ### Straggler Mitigation in Blockchain-based Hierarchical Federated Learning
+        *Georgia State University, INSPIRE Lab | Jun 2025 - Present*
+        - Proposed a decentralized BHFL framework utilizing Raft-based consortium blockchain
+        - Designed 'HieAvg', a novel hierarchical averaging algorithm with theoretical convergence proof
+        - Validated performance improvements on Raspberry Pi and AWS EC2 testbeds
+        - **Submitted to IEEE Internet of Things Journal** | [arXiv](https://arxiv.org/)
+
+        ### NOVA-3D: Non-overlapped Views for 3D Anime Character Reconstruction
+        *Zhejiang Lab, AI Research Institute | Sep 2023 - Dec 2023*
+        - Contributed to a framework synthesizing full-body 3D anime characters from dual viewpoints
+        - Assisted in implementing a Direction-aware Attention Module to resolve 'ghost face' artifacts
+        - **Published on arXiv** | [Paper](https://arxiv.org/)
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: projects
+    content:
+      title: '💻 Open Source Projects'
+      subtitle: ''
+      text: |-
+        ### PaperSeek: Agentic Research Assistant
+        *Nov 2025 - Present* | [GitHub](https://github.com/East-Hu)
+        - Designed a CLI-first, agentic research tool leveraging LLMs for intelligent literature summarization
+        - Implemented multi-source retrieval pipeline (ArXiv, Semantic Scholar) with robust rate-limiting
+        - Achieved **13.9x speedup** in literature acquisition through structured prompting strategies
+
+        ### Mobile Side-Channel Attack: Keystroke Inference
+        *Oct 2025 - Dec 2025* | [GitHub](https://github.com/East-Hu)
+        - Developed an Android application to collect high-frequency sensory data for side-channel analysis
+        - Designed and trained a hybrid CNN-GRU deep learning model for password inference
+        - Analyzed spatial-temporal features of keystroke dynamics for privacy vulnerability research
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: teaching
+    content:
+      title: '📚 Teaching Experience'
+      subtitle: ''
+      text: |-
+        ### Graduate Teaching Assistant
+        *Georgia State University | Jan 2025 - Present*
+        - **Grader** for CSC 6330 (Programming Language Concepts) & CSC 8230 (Secure and Private AI)
+        - Assessed graduate-level assignments and exams; authored original problem sets and code samples
+
+        ### Lab Instructor
+        *Georgia State University | Jan 2026 - Present*
+        - **Lab Instructor** for CSC 1302L (Principles of Computer Science II)
+        - Delivered weekly lab sessions on Python and data structures to undergraduate students
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: awards
+    content:
+      title: '🏆 Honors & Awards'
+      subtitle: ''
+      text: |-
+        - **Graduation Honorary Certificate** - Zhejiang University (2024)
+        - **Team Silver Medal** - 8th China Group Programming Ladder Tournament (2023)
+        - **Team Bronze Medal** - 7th China Group Programming Ladder Tournament (2022)
+        - **Bronze Medal** - 2023 Zhejiang Provincial Collegiate Programming Contest
+        - **Bronze Medal** - 2022 Zhejiang Provincial Collegiate Programming Contest
+        - **Bronze Medal** - 47th ICPC, Nanjing Site (2022)
+        - **Bronze Medal** - 47th ICPC, Jinan Site (2022)
+        - **Bronze Medal** - 46th ICPC, Kunming Site (2022)
+        - **Bronze Medal** - CCPC, Weihai Site (2022)
+    design:
+      columns: '1'
+
   - block: collection
     id: papers
     content:
@@ -60,6 +153,7 @@ sections:
     design:
       view: article-grid
       columns: 2
+
   - block: collection
     content:
       title: Recent Publications
@@ -70,62 +164,29 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
+
+  - block: markdown
+    id: skills
     content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
+      title: '🛠️ Technical Skills'
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
-    content:
-      title: 👉 Build your own academic website like this
       text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        | Category | Skills |
+        |----------|--------|
+        | **Languages** | Python, C/C++, Java, C#, SQL, JavaScript, HTML/CSS, LaTeX, R |
+        | **AI & ML** | PyTorch, Hugging Face Transformers, LLM Agents, RAG, Prompt Engineering, Red Teaming |
+        | **Graphics & 3D** | ModernGL, OpenGL, Unity, NeRF, StyleGAN, 3D Reconstruction |
+        | **Tools** | Git, Docker, Linux/Bash, Flask, React, MySQL, AsyncIO |
     design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-primary-300 dark:bg-primary-700'
-        css_style: ''
+      columns: '1'
+
+  - block: markdown
+    id: collaboration
+    content:
+      title: '🤝 Collaboration'
+      subtitle: ''
+      text: |-
+        If you are a researcher interested in collaborating, please feel free to contact me at [Easton.Hu@uga.edu](mailto:Easton.Hu@uga.edu).
+    design:
+      columns: '1'
 ---

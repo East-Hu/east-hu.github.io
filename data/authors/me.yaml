@@ -2,115 +2,151 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
+  display: Xiangdong Hu (Easton)
+  given: Xiangdong
+  family: Hu
+  alternate: 胡翔东
+  pronunciation: ''
   pronouns: he/him
-postnominals:
-  - PhD
-  - MIEEE
+postnominals: []
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: "🎓"
+role: Ph.D Student in Computer Science
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  Always in beta: learning and evolving.
+  
+  I am currently a Ph.D student in Computer Science at the University of Georgia, 
+  under the guidance of Prof. Jian Liu. I obtained my M.S. in Computer Science from 
+  Georgia State University (GPA: 4.0/4.0) under the supervision of Prof. Qin Hu.
+  
+  Prior to this, I was a member of the Qiushi Class (求是班), a joint program with 
+  Zhejiang University, at NingboTech University, where I was mentored by Prof. Chaoyi Pang.
+  
+  My research focuses on LLM Security & Privacy, Trustworthy AI, and 3D Vision/Reconstruction.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: University of Georgia
+    url: https://www.uga.edu/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:Easton.Hu@uga.edu
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
+    url: https://github.com/East-Hu
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://www.linkedin.com/in/easton-hu/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=GI98HpQAAAAJ
+    label: Google Scholar
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0009-0006-2215-7844
+    label: ORCID
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - LLM Security & Privacy
+  - Trustworthy AI
+  - 3D Vision/Reconstruction
+  - Federated Learning
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: Ph.D in Computer Science
+    institution: University of Georgia
+    start: 2026-05-01
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Advisor: Prof. Jian Liu
+  - degree: M.S. in Computer Science
+    institution: Georgia State University
+    start: 2025-01-01
+    end: 2026-05-31
+    summary: |
+      Advisor: Prof. Qin Hu | GPA: 4.00/4.00
+  - degree: B.Eng in Computer Science and Technology
+    institution: NingboTech University
+    start: 2020-09-01
+    end: 2024-06-30
+    summary: |
+      Advisor: Prof. Chaoyi Pang
+      Honors: Qiushi Class (求是班), a joint program with Zhejiang University.
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Ph.D Student / Research Assistant
+    org: Georgia State University, INSPIRE Lab
+    start: 2025-06-01
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      - **GAMBIT**: Gamified Jailbreak Framework for Multimodal LLMs - Achieved SOTA Attack Success Rates (Submitted to ACL 2026)
+      - **BHFL**: Straggler Mitigation in Blockchain-based Hierarchical Federated Learning (Submitted to IEEE IoT Journal)
+  - role: Research Assistant Intern
+    org: Zhejiang Lab, AI Research Institute
+    start: 2023-09-01
+    end: 2023-12-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      **NOVA-3D**: Non-overlapped Views for 3D Anime Character Reconstruction (Published on arXiv)
+  - role: Graduate Teaching Assistant
+    org: Georgia State University
+    start: 2025-01-01
+    summary: |
+      - Grader for CSC 6330 (Programming Language Concepts) & CSC 8230 (Secure and Private AI)
+      - Lab Instructor for CSC 1302L (Principles of Computer Science II)
 
 skills:
-  - name: Technical Skills
+  - name: AI & Machine Learning
+    items:
+      - label: PyTorch
+        level: 5
+      - label: LLM Agents & RAG
+        level: 5
+      - label: Prompt Engineering
+        level: 5
+      - label: Red Teaming
+        level: 4
+  - name: Programming Languages
     items:
       - label: Python
         level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
+      - label: C/C++
         level: 4
-  - name: Research & Communication
+      - label: Java
+        level: 4
+  - name: Graphics & 3D Vision
     items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
+      - label: OpenGL/ModernGL
         level: 4
-      - label: Grant Proposals
+      - label: NeRF
+        level: 4
+      - label: 3D Reconstruction
         level: 4
 
 languages:
-  - name: English
+  - name: Chinese
     level: 5
     label: Native
-  - name: Spanish
+  - name: English
     level: 4
     label: Fluent
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
+  - title: Graduation Honorary Certificate
+    awarder: Zhejiang University
+    date: "2024-06-01"
+    icon: hero/academic-cap
+  - title: Team Silver Medal - 8th China Group Programming Ladder Tournament
+    awarder: China Collegiate Computing Contest
+    date: "2023-01-01"
+    icon: hero/trophy
+  - title: Bronze Medal - 47th ICPC Nanjing Site
+    awarder: ICPC
+    date: "2022-11-01"
+    icon: hero/trophy
+  - title: Bronze Medal - 47th ICPC Jinan Site
+    awarder: ICPC
+    date: "2022-10-01"
+    icon: hero/trophy
+  - title: Bronze Medal - 46th ICPC Kunming Site
+    awarder: ICPC
+    date: "2021-11-01"
+    icon: hero/trophy
+  - title: Bronze Medal - CCPC Weihai Site
+    awarder: CCPC
+    date: "2021-10-01"
     icon: hero/trophy
