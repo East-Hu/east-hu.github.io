@@ -27,6 +27,19 @@ sections:
         shape: circle
 
   - block: markdown
+    content:
+      title: ''
+      subtitle: ''
+      text: |-
+        <div class="tagline-box">
+          <em>Always in beta: learning and evolving.</em>
+        </div>
+    design:
+      columns: '1'
+      spacing:
+        padding: ['0', '0', '0', '0']
+
+  - block: markdown
     id: news
     content:
       title: '📰 Latest News'
@@ -90,15 +103,17 @@ sections:
       title: '📚 Teaching Experience'
       subtitle: ''
       text: |-
-        ### Lab Instructor
-        *Georgia State University | Jan 2026 - May 2026*
-        - **Lab Instructor** for CSC 1302L (Principles of Computer Science II)
-        - Delivered weekly lab sessions on Python and data structures to undergraduate students
+        - **Lab Instructor, Georgia State University**
+          
+          CSC 1302L: Principles of Computer Science II (Spring 2026)
 
-        ### Graduate Teaching Assistant
-        *Georgia State University | Jan 2025 - May 2026*
-        - **Grader** for CSC 6330 (Programming Language Concepts) & CSC 8230 (Secure and Private AI)
-        - Assessed graduate-level assignments and exams; authored original problem sets and code samples
+        - **Teaching Assistant, Georgia State University**
+          
+          CSC 6330: Programming Language Concepts (Fall 2025)
+          
+          CSC 6330: Programming Language Concepts (Summer 2025)
+          
+          CSC 8230: Secure and Private AI (Spring 2025)
     design:
       columns: '1'
 

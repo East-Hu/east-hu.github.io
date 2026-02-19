@@ -48,4 +48,35 @@ h2.hb-section-title:first-of-type::after,
   content: "About Me" !important;
   font-size: 1.5rem !important;
 }
+
+/* Tagline box with gradient background */
+.tagline-box {
+  background: linear-gradient(135deg, 
+    rgba(156, 163, 175, 0.15) 0%, 
+    rgba(107, 114, 128, 0.2) 50%, 
+    rgba(156, 163, 175, 0.15) 100%);
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tagline-box em {
+  font-style: italic;
+}
+
+/* Dark mode tagline box */
+.dark .tagline-box {
+  background: linear-gradient(135deg, 
+    rgba(75, 85, 99, 0.3) 0%, 
+    rgba(55, 65, 81, 0.4) 50%, 
+    rgba(75, 85, 99, 0.3) 100%);
+  border: 1px solid rgba(107, 114, 128, 0.4);
+  color: #d1d5db;
+}
 </style>
