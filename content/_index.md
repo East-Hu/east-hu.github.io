@@ -34,8 +34,8 @@ sections:
       text: |-
         - **May 2026**: Started Ph.D program at University of Georgia under Dr. Jian Liu!
         - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science!
-        - **January 2026**: One paper (GAMBIT) was submitted to ACL 2026!
-        - **September 2025**: One paper (BHFL) was submitted to IEEE Internet of Things Journal!
+        - **January 2026**: One paper was submitted to ACL 2026!
+        - **September 2025**: One paper was submitted to IEEE Internet of Things Journal!
         - **January 2025**: Started M.S. program at Georgia State University.
         - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University, along with Graduation Honorary Certificate from Zhejiang University.
     design:
