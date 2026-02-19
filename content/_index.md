@@ -112,6 +112,8 @@ sections:
         - **Bronze Medal** - 47th ICPC, Jinan Site (2022)
         - **Bronze Medal** - 46th ICPC, Kunming Site (2022)
         - **Bronze Medal** - CCPC, Weihai Site (2022)
+
+        *"I dedicated most of my undergraduate years to competitive programming. While the awards I earned during my four years as an ACMer were limited, the friends I made along the way are my greatest treasure."*
     design:
       columns: '1'
 
