@@ -27,19 +27,6 @@ sections:
         shape: circle
 
   - block: markdown
-    content:
-      title: ''
-      subtitle: ''
-      text: |-
-        <div class="tagline-box">
-          <em>Always in beta: learning and evolving.</em>
-        </div>
-    design:
-      columns: '1'
-      spacing:
-        padding: ['0', '0', '0', '0']
-
-  - block: markdown
     id: news
     content:
       title: '📰 Latest News'
@@ -66,20 +53,20 @@ sections:
         - Proposed a novel framework utilizing 'Puzzle-based Multimodal Encoding' to disrupt visual semantic filters
         - Identified and formalized the 'Safety-Complexity Trade-off' in Multimodal LLMs
         - Achieved state-of-the-art Attack Success Rates (ASR) on popular models
-        - **Submitted to ACL 2026** | [arXiv](https://arxiv.org/)
+        - **Submitted to ACL 2026** | [arXiv](https://arxiv.org/abs/2601.03416)
 
         ### Straggler Mitigation in Blockchain-based Hierarchical Federated Learning
         *Georgia State University, INSPIRE Lab*
         - Proposed a decentralized BHFL framework utilizing Raft-based consortium blockchain
         - Designed 'HieAvg', a novel hierarchical averaging algorithm with theoretical convergence proof
         - Validated performance improvements on Raspberry Pi and AWS EC2 testbeds
-        - **Submitted to IEEE Internet of Things Journal** | [arXiv](https://arxiv.org/)
+        - **Submitted to IEEE Internet of Things Journal** | [arXiv](https://arxiv.org/abs/2308.01296)
 
         ### NOVA-3D: Non-overlapped Views for 3D Anime Character Reconstruction
         *Zhejiang Lab, AI Research Institute | Sep 2023 - Dec 2023*
         - Contributed to a framework synthesizing full-body 3D anime characters from dual viewpoints
         - Assisted in implementing a Direction-aware Attention Module to resolve 'ghost face' artifacts
-        - **Published on arXiv** | [Paper](https://arxiv.org/)
+        - **Published on arXiv** | [Paper](https://arxiv.org/abs/2405.12505)
     design:
       columns: '1'
 

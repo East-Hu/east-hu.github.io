@@ -13,6 +13,8 @@ status:
   icon: "🎓"
 role: Ph.D Student
 bio: |
+  <div class="tagline-box"><em>Always in beta: learning and evolving.</em></div>
+
   I am currently a Ph.D student in Computer Science at the University of Georgia, 
   under the guidance of Prof. Jian Liu. I obtained my M.S. in Computer Science from 
   Georgia State University (GPA: 4.0/4.0) under the supervision of Prof. Qin Hu.
