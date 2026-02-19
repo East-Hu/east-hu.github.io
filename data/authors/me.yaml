@@ -2,12 +2,12 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Xiangdong Hu (Easton)
+  display: Xiangdong Hu
   given: Xiangdong
   family: Hu
   alternate: 胡翔东
   pronunciation: ''
-  pronouns: he/him
+  pronouns: ''
 postnominals: []
 status:
   icon: "🎓"
@@ -42,6 +42,9 @@ links:
   - icon: academicons/orcid
     url: https://orcid.org/0009-0006-2215-7844
     label: ORCID
+  - icon: hero/document-arrow-down
+    url: uploads/resume.pdf
+    label: Download CV
 
 interests:
   - LLM Security & Privacy
