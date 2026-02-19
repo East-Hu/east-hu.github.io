@@ -38,7 +38,6 @@ sections:
         - **September 2025**: One paper (BHFL) was submitted to IEEE Internet of Things Journal!
         - **January 2025**: Started M.S. program at Georgia State University.
         - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University.
-        - **Sep – Dec 2023**: Research internship at Zhejiang Lab on 3D character reconstruction (NOVA-3D).
     design:
       columns: '1'
 
@@ -61,12 +60,6 @@ sections:
         - Designed 'HieAvg', a novel hierarchical averaging algorithm with theoretical convergence proof
         - Validated performance improvements on Raspberry Pi and AWS EC2 testbeds
         - **Submitted to IEEE Internet of Things Journal** | [arXiv](https://arxiv.org/abs/2308.01296)
-
-        ### NOVA-3D: Non-overlapped Views for 3D Anime Character Reconstruction
-        *Zhejiang Lab, AI Research Institute | Sep 2023 - Dec 2023*
-        - Contributed to a framework synthesizing full-body 3D anime characters from dual viewpoints
-        - Assisted in implementing a Direction-aware Attention Module to resolve 'ghost face' artifacts
-        - **Published on arXiv** | [Paper](https://arxiv.org/abs/2405.12505)
     design:
       columns: '1'
 

@@ -15,14 +15,11 @@ role: Ph.D Student
 bio: |
   <div class="tagline-box"><em>Always in beta: learning and evolving.</em></div>
 
-  I am currently a Ph.D student in Computer Science at the University of Georgia, 
-  under the guidance of Prof. Jian Liu. I obtained my M.S. in Computer Science from 
-  Georgia State University (GPA: 4.0/4.0) under the supervision of Prof. Qin Hu.
-  
-  Prior to this, I was a member of the Qiushi Class (求是班), a joint program with 
-  Zhejiang University, at NingboTech University, where I was mentored by Prof. Chaoyi Pang.
-  
-  My research focuses on LLM Security & Privacy, Trustworthy AI, and Human-Computer Interaction.
+  I am currently a Ph.D student in Computer Science at the University of Georgia, under the guidance of Prof. Jian Liu. I obtained my M.S. in Computer Science from Georgia State University under the supervision of Prof. Qin Hu.
+
+  Prior to this, I was a member of the Qiushi Class (求是班), a joint program with Zhejiang University, at NingboTech University, where I was mentored by Prof. Chaoyi Pang.
+
+  My current research focuses on how to protect human voices from being cloned by AI. I've previously focused on security in multimodal large language models and federated learning. You can check out my recent publications on my Research page.
 
 affiliations:
   - name: University of Georgia
