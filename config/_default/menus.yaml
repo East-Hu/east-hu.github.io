@@ -1,6 +1,6 @@
 # Navigation Links
 main:
-  - name: About
+  - name: Bio
     url: /
     weight: 10
   - name: News
@@ -18,6 +18,3 @@ main:
   - name: Awards
     url: /#awards
     weight: 60
-  - name: Skills
-    url: /#skills
-    weight: 70

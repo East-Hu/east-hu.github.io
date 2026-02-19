@@ -27,18 +27,6 @@ sections:
         shape: circle
 
   - block: markdown
-    content:
-      title: '🖥️ Research Interests'
-      subtitle: ''
-      text: |-
-        - **LLM Security & Privacy** - Exploring vulnerabilities and defense mechanisms in large language models
-        - **Trustworthy AI** - Building reliable and safe AI systems
-        - **3D Vision/Reconstruction** - Computer vision applications in 3D understanding
-        - **Federated Learning** - Distributed machine learning with privacy preservation
-    design:
-      columns: '1'
-
-  - block: markdown
     id: news
     content:
       title: '📰 Latest News'
@@ -48,7 +36,6 @@ sections:
         - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science (GPA: 4.0/4.0)!
         - **January 2026**: One paper (GAMBIT) was submitted to ACL 2026!
         - **September 2025**: One paper (BHFL) was submitted to IEEE Internet of Things Journal!
-        - **June 2025**: Joined INSPIRE Lab at GSU as Ph.D student.
         - **January 2025**: Started M.S. program at Georgia State University.
         - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University.
         - **Sep – Dec 2023**: Research internship at Zhejiang Lab on 3D character reconstruction (NOVA-3D).
@@ -62,14 +49,14 @@ sections:
       subtitle: ''
       text: |-
         ### GAMBIT: Gamified Jailbreak Framework for Multimodal LLMs
-        *Georgia State University, INSPIRE Lab | Jun 2025 - Present*
+        *Georgia State University, INSPIRE Lab*
         - Proposed a novel framework utilizing 'Puzzle-based Multimodal Encoding' to disrupt visual semantic filters
         - Identified and formalized the 'Safety-Complexity Trade-off' in Multimodal LLMs
         - Achieved state-of-the-art Attack Success Rates (ASR) on popular models
         - **Submitted to ACL 2026** | [arXiv](https://arxiv.org/)
 
         ### Straggler Mitigation in Blockchain-based Hierarchical Federated Learning
-        *Georgia State University, INSPIRE Lab | Jun 2025 - Present*
+        *Georgia State University, INSPIRE Lab*
         - Proposed a decentralized BHFL framework utilizing Raft-based consortium blockchain
         - Designed 'HieAvg', a novel hierarchical averaging algorithm with theoretical convergence proof
         - Validated performance improvements on Raspberry Pi and AWS EC2 testbeds
@@ -90,16 +77,10 @@ sections:
       subtitle: ''
       text: |-
         ### PaperSeek: Agentic Research Assistant
-        *Nov 2025 - Present* | [GitHub](https://github.com/East-Hu)
+        *Nov 2025 - Present* | [GitHub](https://github.com/East-Hu/PaperSeek)
         - Designed a CLI-first, agentic research tool leveraging LLMs for intelligent literature summarization
         - Implemented multi-source retrieval pipeline (ArXiv, Semantic Scholar) with robust rate-limiting
         - Achieved **13.9x speedup** in literature acquisition through structured prompting strategies
-
-        ### Mobile Side-Channel Attack: Keystroke Inference
-        *Oct 2025 - Dec 2025* | [GitHub](https://github.com/East-Hu)
-        - Developed an Android application to collect high-frequency sensory data for side-channel analysis
-        - Designed and trained a hybrid CNN-GRU deep learning model for password inference
-        - Analyzed spatial-temporal features of keystroke dynamics for privacy vulnerability research
     design:
       columns: '1'
 
@@ -109,15 +90,15 @@ sections:
       title: '📚 Teaching Experience'
       subtitle: ''
       text: |-
-        ### Graduate Teaching Assistant
-        *Georgia State University | Jan 2025 - Present*
-        - **Grader** for CSC 6330 (Programming Language Concepts) & CSC 8230 (Secure and Private AI)
-        - Assessed graduate-level assignments and exams; authored original problem sets and code samples
-
         ### Lab Instructor
-        *Georgia State University | Jan 2026 - Present*
+        *Georgia State University | Jan 2026 - May 2026*
         - **Lab Instructor** for CSC 1302L (Principles of Computer Science II)
         - Delivered weekly lab sessions on Python and data structures to undergraduate students
+
+        ### Graduate Teaching Assistant
+        *Georgia State University | Jan 2025 - May 2026*
+        - **Grader** for CSC 6330 (Programming Language Concepts) & CSC 8230 (Secure and Private AI)
+        - Assessed graduate-level assignments and exams; authored original problem sets and code samples
     design:
       columns: '1'
 
@@ -161,21 +142,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-
-  - block: markdown
-    id: skills
-    content:
-      title: '🛠️ Technical Skills'
-      subtitle: ''
-      text: |-
-        | Category | Skills |
-        |----------|--------|
-        | **Languages** | Python, C/C++, Java, C#, SQL, JavaScript, HTML/CSS, LaTeX, R |
-        | **AI & ML** | PyTorch, Hugging Face Transformers, LLM Agents, RAG, Prompt Engineering, Red Teaming |
-        | **Graphics & 3D** | ModernGL, OpenGL, Unity, NeRF, StyleGAN, 3D Reconstruction |
-        | **Tools** | Git, Docker, Linux/Bash, Flask, React, MySQL, AsyncIO |
-    design:
-      columns: '1'
 
   - block: markdown
     id: collaboration

@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Xiangdong Hu (Easton)"
+    name: "Xiangdong (Easton) Hu"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: "University of Georgia"
     # Schema.org type for structured data

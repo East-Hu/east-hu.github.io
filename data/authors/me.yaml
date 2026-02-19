@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Xiangdong Hu
+  display: Easton Hu
   given: Xiangdong
   family: Hu
   alternate: 胡翔东
@@ -22,7 +22,7 @@ bio: |
   Prior to this, I was a member of the Qiushi Class (求是班), a joint program with 
   Zhejiang University, at NingboTech University, where I was mentored by Prof. Chaoyi Pang.
   
-  My research focuses on LLM Security & Privacy, Trustworthy AI, and 3D Vision/Reconstruction.
+  My research focuses on LLM Security & Privacy, Trustworthy AI, and Human-Computer Interaction.
 
 affiliations:
   - name: University of Georgia
@@ -49,8 +49,8 @@ links:
 interests:
   - LLM Security & Privacy
   - Trustworthy AI
-  - 3D Vision/Reconstruction
-  - Federated Learning
+  - Multimodal Model
+  - Human-Computer Interaction
 
 education:
   - degree: Ph.D in Computer Science
@@ -110,14 +110,6 @@ skills:
       - label: C/C++
         level: 4
       - label: Java
-        level: 4
-  - name: Graphics & 3D Vision
-    items:
-      - label: OpenGL/ModernGL
-        level: 4
-      - label: NeRF
-        level: 4
-      - label: 3D Reconstruction
         level: 4
 
 languages:
