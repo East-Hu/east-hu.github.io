@@ -37,4 +37,15 @@ section.hb-section,
     rgba(76, 29, 149, 0.2) 50%, 
     rgba(131, 24, 67, 0.2) 100%) !important;
 }
+
+/* Replace "Professional Summary" with "About Me" */
+h2.hb-section-title:first-of-type,
+.hb-bio h2:first-of-type {
+  font-size: 0 !important;
+}
+h2.hb-section-title:first-of-type::after,
+.hb-bio h2:first-of-type::after {
+  content: "About Me" !important;
+  font-size: 1.5rem !important;
+}
 </style>
