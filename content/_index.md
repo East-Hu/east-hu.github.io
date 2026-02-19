@@ -37,7 +37,7 @@ sections:
         - **January 2026**: One paper (GAMBIT) was submitted to ACL 2026!
         - **September 2025**: One paper (BHFL) was submitted to IEEE Internet of Things Journal!
         - **January 2025**: Started M.S. program at Georgia State University.
-        - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University.
+        - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University, along with Graduation Honorary Certificate from Zhejiang University.
     design:
       columns: '1'
 
@@ -103,6 +103,8 @@ sections:
       title: '🏆 Honors & Awards'
       subtitle: ''
       text: |-
+        <p style="font-size: 0.9rem;"><em>"I dedicated most of my undergraduate years to competitive programming. While the awards I earned during my four years as an ACMer were limited, the friends I made along the way are my greatest treasure."</em></p>
+
         - **Graduation Honorary Certificate** - Zhejiang University (2024)
         - **Team Silver Medal** - 8th China Group Programming Ladder Tournament (2023)
         - **Team Bronze Medal** - 7th China Group Programming Ladder Tournament (2022)
@@ -112,8 +114,6 @@ sections:
         - **Bronze Medal** - 47th ICPC, Jinan Site (2022)
         - **Bronze Medal** - 46th ICPC, Kunming Site (2022)
         - **Bronze Medal** - CCPC, Weihai Site (2022)
-
-        *"I dedicated most of my undergraduate years to competitive programming. While the awards I earned during my four years as an ACMer were limited, the friends I made along the way are my greatest treasure."*
     design:
       columns: '1'
 
