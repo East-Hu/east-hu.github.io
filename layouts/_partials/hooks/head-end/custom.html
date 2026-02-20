@@ -50,6 +50,23 @@ h1[class*="font-bold"] {
   font-style: italic;
 }
 
+.tagline-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background: #6b7280;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 0.7s infinite;
+}
+
+.dark .tagline-cursor { background: #9ca3af; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* Dark mode tagline box */
 .dark .tagline-box {
   background: linear-gradient(135deg, 
@@ -178,6 +195,27 @@ h1[class*="font-bold"] {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  /* Typewriter effect for tagline */
+  var tagline = document.querySelector('.tagline-box em');
+  if (tagline) {
+    var text = tagline.textContent;
+    tagline.textContent = '';
+    var cursor = document.createElement('span');
+    cursor.className = 'tagline-cursor';
+    tagline.appendChild(cursor);
+    var i = 0;
+    function type() {
+      if (i < text.length) {
+        tagline.insertBefore(document.createTextNode(text.charAt(i)), cursor);
+        i++;
+        setTimeout(type, 60 + Math.random() * 40);
+      } else {
+        setTimeout(function() { cursor.style.display = 'none'; }, 2000);
+      }
+    }
+    setTimeout(type, 500);
+  }
+
   var section = document.getElementById('moments');
   if (!section) return;
   var container = section.querySelector('.max-w-prose');
