@@ -303,6 +303,62 @@ h1[class*="font-bold"] {
 
 .dark .moments-dot { background: #4b5563; }
 .dark .moments-dot.active { background: #9ca3af; }
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(107, 114, 128, 0.85);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s;
+  z-index: 999;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: rgba(75, 85, 99, 1);
+  transform: translateY(-2px);
+}
+
+.dark .back-to-top {
+  background: rgba(75, 85, 99, 0.9);
+}
+
+.dark .back-to-top:hover {
+  background: rgba(107, 114, 128, 1);
+}
+
+/* Last updated footer */
+.last-updated {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.dark .last-updated {
+  color: #6b7280;
+}
 </style>
 
 <script>
@@ -332,22 +388,23 @@ document.addEventListener('DOMContentLoaded', function() {
   var socialLinks = document.querySelector('.resume-biography .flex.flex-wrap.justify-center.gap-4');
   if (socialLinks) {
     var parent = socialLinks.parentNode;
-    var spotifyDiv = document.createElement('div');
-    spotifyDiv.style.cssText = 'margin-top: 1.5rem; width: 100%; display: flex; flex-direction: column; align-items: center;';
+    var playerDiv = document.createElement('div');
+    playerDiv.style.cssText = 'margin-top: 1.5rem; width: 100%; display: flex; flex-direction: column; align-items: center;';
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://open.spotify.com/embed/playlist/252Ic4PcVThxRrL7kFOLZB?utm_source=generator&theme=0';
+    iframe.src = 'https://www.youtube.com/embed/videoseries?list=PLculZTj6BuRa0kU6SrxqpRy46jhnD8nx2&autoplay=0&loop=1';
     iframe.style.borderRadius = '12px';
     iframe.width = '100%';
     iframe.height = '152';
     iframe.frameBorder = '0';
-    iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
     iframe.loading = 'lazy';
-    spotifyDiv.appendChild(iframe);
+    playerDiv.appendChild(iframe);
     var hint = document.createElement('p');
     hint.style.cssText = 'font-size: 0.8rem; font-style: italic; color: #9ca3af; text-align: center; margin-top: 0.5rem;';
     hint.textContent = '"Stay a while and enjoy a song before you go."';
-    spotifyDiv.appendChild(hint);
-    parent.insertBefore(spotifyDiv, socialLinks.nextSibling);
+    playerDiv.appendChild(hint);
+    parent.insertBefore(playerDiv, socialLinks.nextSibling);
   }
 
   var section = document.getElementById('moments');
@@ -480,6 +537,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function autoPlay() { timer = setInterval(function() { goTo(realIdx + 1); }, 4000); }
   autoPlay();
+
+  /* Back to top button */
+  var btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.innerHTML = '&#9650;';
+  btn.title = 'Back to top';
+  btn.onclick = function() { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  document.body.appendChild(btn);
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  /* Last updated footer */
+  var footer = document.querySelector('footer');
+  if (footer) {
+    var updated = document.createElement('div');
+    updated.className = 'last-updated';
+    updated.textContent = 'Last updated: {{ now.Format "January 2006" }}';
+    footer.appendChild(updated);
+  }
 });
 </script>
 
