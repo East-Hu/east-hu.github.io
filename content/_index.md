@@ -132,8 +132,8 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        <div style="text-align: center;">
-          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=s7IR6GNpbskwondQ33HOxiMKSc1SnG02RRQfC-IxvOQ&cl=ffffff&w=a"></script>
+        <div style="display: flex; justify-content: center;">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=s7IR6GNpbskwondQ33HOxiMKSc1SnG02RRQfC-IxvOQ&cl=ffffff&w=600"></script>
         </div>
     design:
       columns: '1'
