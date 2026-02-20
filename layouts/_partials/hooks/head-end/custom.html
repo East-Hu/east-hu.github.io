@@ -216,6 +216,24 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(type, 500);
   }
 
+  /* Spotify player in left sidebar under social links */
+  var socialLinks = document.querySelector('.resume-biography .flex.flex-wrap.justify-center.gap-4');
+  if (socialLinks) {
+    var parent = socialLinks.parentNode;
+    var spotifyDiv = document.createElement('div');
+    spotifyDiv.style.cssText = 'margin-top: 1.5rem; width: 100%; display: flex; justify-content: center;';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://open.spotify.com/embed/playlist/252Ic4PcVThxRrL7kFOLZB?utm_source=generator&theme=0';
+    iframe.style.borderRadius = '12px';
+    iframe.width = '100%';
+    iframe.height = '152';
+    iframe.frameBorder = '0';
+    iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+    iframe.loading = 'lazy';
+    spotifyDiv.appendChild(iframe);
+    parent.insertBefore(spotifyDiv, socialLinks.nextSibling);
+  }
+
   var section = document.getElementById('moments');
   if (!section) return;
   var container = section.querySelector('.max-w-prose');
