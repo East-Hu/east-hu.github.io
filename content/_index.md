@@ -42,24 +42,32 @@ sections:
       columns: '1'
 
   - block: markdown
-    id: research
+    id: publications
     content:
-      title: '🔬 Research Experience'
+      title: '📝 Publications'
       subtitle: ''
       text: |-
-        #### GAMBIT: Gamified Jailbreak Framework for Multimodal LLMs
-        *Georgia State University, INSPIRE Lab*
-        - Proposed a novel framework utilizing 'Puzzle-based Multimodal Encoding' to disrupt visual semantic filters
-        - Identified and formalized the 'Safety-Complexity Trade-off' in Multimodal LLMs
-        - Achieved state-of-the-art Attack Success Rates (ASR) on popular models
-        - **Submitted to ACL 2026** | [arXiv](https://arxiv.org/abs/2601.03416)
+        <div class="pub-card">
+          <div class="pub-img">
+            <img src="/uploads/GAMBIT.png" alt="GAMBIT Framework">
+          </div>
+          <div class="pub-info">
+            <div class="pub-title"><a href="/uploads/GAMBIT.pdf" target="_blank">GAMBIT: A Gamified Jailbreak Framework for Multimodal Large Language Models</a></div>
+            <div class="pub-authors"><strong>Xiangdong Hu</strong>, Yangyang Jiang, Qin Hu, Xiaojun Jia</div>
+            <div class="pub-venue"><a href="https://arxiv.org/abs/2601.03416" target="_blank"><em>arXiv</em></a>, 2025</div>
+          </div>
+        </div>
 
-        #### Straggler Mitigation in Blockchain-based Hierarchical Federated Learning
-        *Georgia State University, INSPIRE Lab*
-        - Proposed a decentralized BHFL framework utilizing Raft-based consortium blockchain
-        - Designed 'HieAvg', a novel hierarchical averaging algorithm with theoretical convergence proof
-        - Validated performance improvements on Raspberry Pi and AWS EC2 testbeds
-        - **Submitted to IEEE Internet of Things Journal** | [arXiv](https://arxiv.org/abs/2308.01296)
+        <div class="pub-card">
+          <div class="pub-img">
+            <img src="/uploads/BHFL.png" alt="BHFL Framework">
+          </div>
+          <div class="pub-info">
+            <div class="pub-title"><a href="/uploads/BHFL.pdf" target="_blank">Straggler Mitigation and Latency Optimization in Blockchain-based Hierarchical Federated Learning</a></div>
+            <div class="pub-authors">Zhilin Wang, <strong>Xiangdong Hu</strong>, Qin Hu, Minghui Xu, Zehui Xiong</div>
+            <div class="pub-venue"><em>Under review for IEEE Internet of Things Journal</em></div>
+          </div>
+        </div>
     design:
       columns: '1'
 
