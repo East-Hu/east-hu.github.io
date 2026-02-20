@@ -118,6 +118,15 @@ sections:
       columns: '1'
 
   - block: markdown
+    id: moments
+    content:
+      title: '📸 Moments'
+      subtitle: ''
+      text: ""
+    design:
+      columns: '1'
+
+  - block: markdown
     id: collaboration
     content:
       title: '🤝 Collaboration'

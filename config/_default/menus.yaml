@@ -18,6 +18,9 @@ main:
   - name: Awards
     url: /#awards
     weight: 60
+  - name: Moments
+    url: /#moments
+    weight: 65
   - name: Contact
     url: /#collaboration
     weight: 70

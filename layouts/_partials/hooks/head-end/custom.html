@@ -1,0 +1,313 @@
+<!-- Import Nunito font - rounded and friendly -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Override favicon with wave emoji -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll("link[rel*='icon']").forEach(function(el) { el.remove(); });
+  var link = document.createElement('link');
+  link.rel = 'icon';
+  link.type = 'image/png';
+  link.href = '/media/icon.png';
+  document.head.appendChild(link);
+});
+</script>
+
+<style>
+/* Apply Nunito font to author name */
+.text-3xl.font-bold,
+.text-4xl.font-bold,
+h1[class*="font-bold"] {
+  font-family: 'Nunito', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Hide education dates */
+.hb-education-date,
+[class*="education"] time {
+  display: none !important;
+}
+
+/* Tagline box with gradient background */
+.tagline-box {
+  background: linear-gradient(135deg, 
+    rgba(156, 163, 175, 0.15) 0%, 
+    rgba(107, 114, 128, 0.2) 50%, 
+    rgba(156, 163, 175, 0.15) 100%);
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tagline-box em {
+  font-style: italic;
+}
+
+/* Dark mode tagline box */
+.dark .tagline-box {
+  background: linear-gradient(135deg, 
+    rgba(75, 85, 99, 0.3) 0%, 
+    rgba(55, 65, 81, 0.4) 50%, 
+    rgba(75, 85, 99, 0.3) 100%);
+  border: 1px solid rgba(107, 114, 128, 0.4);
+  color: #d1d5db;
+}
+
+/* Moments carousel */
+.moments-wrap {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.moments-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.moments-item {
+  flex: 0 0 60%;
+  padding: 0 8px;
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0.4;
+  transform: scale(0.88);
+  transition: opacity 0.5s, transform 0.5s;
+  filter: brightness(0.7);
+}
+
+.moments-item.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+.moments-item img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.moments-caption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.moments-item.active .moments-caption {
+  opacity: 1;
+}
+
+.dark .moments-caption { color: #9ca3af; }
+
+.moments-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.moments-arrow:hover {
+  background: #fff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.dark .moments-arrow {
+  background: rgba(55, 65, 81, 0.9);
+  color: #e5e7eb;
+}
+
+.dark .moments-arrow:hover {
+  background: rgba(75, 85, 99, 1);
+}
+
+.moments-arrow.left { left: 4px; }
+.moments-arrow.right { right: 4px; }
+
+.moments-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 1.2rem;
+}
+
+.moments-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d1d5db;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.moments-dot.active {
+  background: #6b7280;
+  transform: scale(1.3);
+}
+
+.dark .moments-dot { background: #4b5563; }
+.dark .moments-dot.active { background: #9ca3af; }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var section = document.getElementById('moments');
+  if (!section) return;
+  var container = section.querySelector('.max-w-prose');
+  if (container) container.classList.remove('max-w-prose');
+  var target = container || section;
+  var root = document.createElement('div');
+  root.id = 'moments-root';
+  target.appendChild(root);
+
+  var photos = [
+    {src: '/gallery/me-in-anfield-stadium.jpg', cap: 'Me in Anfield Stadium'},
+    {src: '/gallery/qinghai-lake.jpg', cap: 'Qinghai Lake'},
+    {src: '/gallery/me-and-my-friends.jpg', cap: 'Me and My Friends'},
+    {src: '/gallery/londons-night.jpg', cap: "London's Night"},
+    {src: '/gallery/me-playing-ice-hockey.jpg', cap: 'Me Playing Ice Hockey'},
+    {src: '/gallery/sunrise-in-zhoushan.jpg', cap: 'Sunrise in Zhoushan'},
+    {src: '/gallery/me-and-my-love.jpg', cap: 'Me and My Love'},
+    {src: '/gallery/first-internship-experience.jpg', cap: 'First Internship Experience'},
+    {src: '/gallery/me-in-alaska.jpg', cap: 'Me in Alaska'},
+    {src: '/gallery/claypot-rice.jpg', cap: 'Claypot Rice'},
+    {src: '/gallery/me-in-fifa-club-world-cup.jpg', cap: 'Me in FIFA Club World Cup'},
+    {src: '/gallery/qinghai-tibet-plateau.jpg', cap: 'Qinghai-Tibet Plateau'},
+    {src: '/gallery/me-playing-poker.jpg', cap: 'Me Playing Poker'},
+    {src: '/gallery/me-in-giant-causeway.jpg', cap: 'Me in Giant Causeway'},
+    {src: '/gallery/remaking-cds.jpg', cap: 'Remaking CDs'},
+    {src: '/gallery/me-in-qiandao-lake.jpg', cap: 'Me in Qiandao Lake'}
+  ];
+
+  var total = photos.length;
+  var SLIDE_WIDTH = 60;
+  var OFFSET = (100 - SLIDE_WIDTH) / 2;
+  var realIdx = 0;
+  var timer, isTransitioning = false;
+
+  var wrap = document.createElement('div');
+  wrap.className = 'moments-wrap';
+
+  var track = document.createElement('div');
+  track.className = 'moments-track';
+
+  var extended = [photos[total - 1]].concat(photos, [photos[0]]);
+
+  function makeSlide(p) {
+    var item = document.createElement('div');
+    item.className = 'moments-item';
+    item.style.flex = '0 0 ' + SLIDE_WIDTH + '%';
+    var img = document.createElement('img');
+    img.src = p.src; img.alt = p.cap; img.loading = 'lazy';
+    var cap = document.createElement('div');
+    cap.className = 'moments-caption';
+    cap.textContent = p.cap;
+    item.appendChild(img); item.appendChild(cap);
+    return item;
+  }
+
+  extended.forEach(function(p) { track.appendChild(makeSlide(p)); });
+
+  function getTranslate(i) {
+    return -(i + 1) * SLIDE_WIDTH + OFFSET;
+  }
+
+  function updateActive() {
+    var items = track.querySelectorAll('.moments-item');
+    items.forEach(function(el, i) {
+      el.className = 'moments-item' + (i === realIdx + 1 ? ' active' : '');
+    });
+    var allDots = dotsDiv.querySelectorAll('.moments-dot');
+    allDots.forEach(function(d, i) {
+      d.className = 'moments-dot' + (i === realIdx ? ' active' : '');
+    });
+  }
+
+  function goTo(n, animate) {
+    if (isTransitioning) return;
+    realIdx = n;
+    if (animate !== false) {
+      isTransitioning = true;
+      track.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1)';
+    } else {
+      track.style.transition = 'none';
+    }
+    track.style.transform = 'translateX(' + getTranslate(realIdx) + '%)';
+    updateActive();
+  }
+
+  track.addEventListener('transitionend', function() {
+    isTransitioning = false;
+    if (realIdx >= total) {
+      realIdx = 0;
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(' + getTranslate(0) + '%)';
+      updateActive();
+    } else if (realIdx < 0) {
+      realIdx = total - 1;
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(' + getTranslate(total - 1) + '%)';
+      updateActive();
+    }
+  });
+
+  var leftBtn = document.createElement('button');
+  leftBtn.className = 'moments-arrow left';
+  leftBtn.innerHTML = '&#10094;';
+  leftBtn.onclick = function() { clearInterval(timer); goTo(realIdx - 1); autoPlay(); };
+
+  var rightBtn = document.createElement('button');
+  rightBtn.className = 'moments-arrow right';
+  rightBtn.innerHTML = '&#10095;';
+  rightBtn.onclick = function() { clearInterval(timer); goTo(realIdx + 1); autoPlay(); };
+
+  wrap.appendChild(leftBtn);
+  wrap.appendChild(track);
+  wrap.appendChild(rightBtn);
+
+  var dotsDiv = document.createElement('div');
+  dotsDiv.className = 'moments-dots';
+  photos.forEach(function(_, i) {
+    var d = document.createElement('button');
+    d.className = 'moments-dot' + (i === 0 ? ' active' : '');
+    d.onclick = function() { clearInterval(timer); goTo(i); autoPlay(); };
+    dotsDiv.appendChild(d);
+  });
+
+  root.appendChild(wrap);
+  root.appendChild(dotsDiv);
+
+  goTo(0, false);
+
+  function autoPlay() { timer = setInterval(function() { goTo(realIdx + 1); }, 4000); }
+  autoPlay();
+});
+</script>
+
