@@ -126,4 +126,15 @@ sections:
         If you are a researcher interested in collaborating, please feel free to contact me at [Easton.Hu@uga.edu](mailto:Easton.Hu@uga.edu).
     design:
       columns: '1'
+
+  - block: markdown
+    content:
+      title: ''
+      subtitle: ''
+      text: |-
+        <div style="text-align: center;">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=s7IR6GNpbskwondQ33HOxiMKSc1SnG02RRQfC-IxvOQ&cl=ffffff&w=a"></script>
+        </div>
+    design:
+      columns: '1'
 ---
