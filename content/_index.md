@@ -132,9 +132,19 @@ sections:
       title: ''
       subtitle: ''
       text: |-
-        <div style="display: flex; justify-content: center; pointer-events: none;">
+        <div id="map-container" style="display: flex; justify-content: center;">
           <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=s7IR6GNpbskwondQ33HOxiMKSc1SnG02RRQfC-IxvOQ&cl=ffffff&w=600"></script>
         </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var c = document.getElementById('map-container');
+          c.addEventListener('click', function(e) { e.preventDefault(); e.stopPropagation(); }, true);
+          c.querySelectorAll('a').forEach(function(a) { a.removeAttribute('href'); a.style.cursor = 'default'; });
+          new MutationObserver(function() {
+            c.querySelectorAll('a').forEach(function(a) { a.removeAttribute('href'); a.style.cursor = 'default'; });
+          }).observe(c, {childList: true, subtree: true});
+        });
+        </script>
     design:
       columns: '1'
 ---
