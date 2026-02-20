@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (socialLinks) {
     var parent = socialLinks.parentNode;
     var spotifyDiv = document.createElement('div');
-    spotifyDiv.style.cssText = 'margin-top: 1.5rem; width: 100%; display: flex; justify-content: center;';
+    spotifyDiv.style.cssText = 'margin-top: 1.5rem; width: 100%; display: flex; flex-direction: column; align-items: center;';
     var iframe = document.createElement('iframe');
     iframe.src = 'https://open.spotify.com/embed/playlist/252Ic4PcVThxRrL7kFOLZB?utm_source=generator&theme=0';
     iframe.style.borderRadius = '12px';
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
     spotifyDiv.appendChild(iframe);
     var hint = document.createElement('p');
     hint.style.cssText = 'font-size: 0.8rem; font-style: italic; color: #9ca3af; text-align: center; margin-top: 0.5rem;';
-    hint.textContent = 'Stay a while and enjoy a song before you go.';
+    hint.textContent = '"Stay a while and enjoy a song before you go."';
     spotifyDiv.appendChild(hint);
     parent.insertBefore(spotifyDiv, socialLinks.nextSibling);
   }
