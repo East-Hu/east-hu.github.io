@@ -231,6 +231,10 @@ document.addEventListener('DOMContentLoaded', function() {
     iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
     iframe.loading = 'lazy';
     spotifyDiv.appendChild(iframe);
+    var hint = document.createElement('p');
+    hint.style.cssText = 'font-size: 0.8rem; font-style: italic; color: #9ca3af; text-align: center; margin-top: 0.5rem;';
+    hint.textContent = 'Stay a while and enjoy a song before you go.';
+    spotifyDiv.appendChild(hint);
     parent.insertBefore(spotifyDiv, socialLinks.nextSibling);
   }
 
