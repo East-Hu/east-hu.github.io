@@ -9,6 +9,12 @@
     "build": "hugo --minify && pnpm run pagefind",
     "pagefind": "pagefind --site public"
   },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@tailwindcss/oxide"
+    ]
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "@tailwindcss/typography": "^0.5.10",
