@@ -34,7 +34,7 @@ sections:
       text: |-
         - **May 2026**: Started Ph.D program at University of Georgia under the guidance of Dr. Jian Liu!
         - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science!
-        - **January 2026**: One paper was submitted to ACL 2026!
+        - **April 2026**: One paper was accepted by ACL main conference 2026!
         - **September 2025**: One paper was submitted to IEEE Internet of Things Journal!
         - **January 2025**: Started M.S. program at Georgia State University.
         - **June 2024**: Completed Bachelor's degree and graduated from NingboTech University, along with Graduation Honorary Certificate from Zhejiang University.
@@ -54,7 +54,7 @@ sections:
           <div class="pub-info">
             <div class="pub-title"><a href="/uploads/GAMBIT.pdf" target="_blank">GAMBIT: A Gamified Jailbreak Framework for Multimodal Large Language Models</a></div>
             <div class="pub-authors"><strong>Xiangdong Hu</strong>, Yangyang Jiang, Qin Hu, Xiaojun Jia</div>
-            <div class="pub-venue"><a href="https://arxiv.org/abs/2601.03416" target="_blank"><em>arXiv</em></a>, 2025</div>
+            <div class="pub-venue"><a href="https://arxiv.org/abs/2601.03416" target="_blank"><em>ACL</em></a>, 2026</div>
           </div>
         </div>
 
