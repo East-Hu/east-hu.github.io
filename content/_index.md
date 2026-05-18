@@ -32,6 +32,7 @@ sections:
       title: '📰 Latest News'
       subtitle: ''
       text: |-
+        - **May 2026**: My paper, “GAMBIT: A Gamified Jailbreak Framework for Multimodal Large Language Models,” has been accepted as an oral presentation at ACL 2026. I’m excited to share this work and look forward to connecting with everyone in San Diego!
         - **May 2026**: One paper was submitted to the NeurIPS 2026!
         - **May 2026**: Started Ph.D program at University of Georgia under the guidance of Dr. Jian Liu!
         - **May 2026**: Graduated from Georgia State University with M.S. in Computer Science!
