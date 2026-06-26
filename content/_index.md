@@ -32,6 +32,7 @@ sections:
       title: '📰 Latest News'
       subtitle: ''
       text: |-
+        - **June 2026**: Attended CVPR 2026!
         - **May 2026**: My paper, “GAMBIT: A Gamified Jailbreak Framework for Multimodal Large Language Models,” has been accepted as an **oral** presentation at ACL 2026. I’m excited to share this work and look forward to connecting with everyone in San Diego!
         - **May 2026**: One paper was submitted to the NeurIPS 2026!
         - **May 2026**: Started Ph.D program at University of Georgia under the guidance of Dr. Jian Liu!
@@ -88,11 +89,15 @@ sections:
   #     columns: '1'
 
   - block: markdown
-    id: teaching
+    id: experience
     content:
-      title: '📚 Teaching Experience'
+      title: '💼 Experience'
       subtitle: ''
       text: |-
+        - **Research Assistant, University of Georgia**
+          
+          Research on protecting human voice and speech from AI cloning, advised by [Dr. Jian Liu](https://mosis.uga.edu/jianliu/).
+
         - **Lab Instructor, Georgia State University**
           
           CSC 1302L: Principles of Computer Science II (Spring 2026)
@@ -104,6 +109,16 @@ sections:
           CSC 6330: Programming Language Concepts (Summer 2025)
           
           CSC 8230: Secure and Private AI (Spring 2025)
+    design:
+      columns: '1'
+
+  - block: markdown
+    id: service
+    content:
+      title: '🛠️ Academic Service'
+      subtitle: ''
+      text: |-
+        I serve as a reviewer for the following venues: NeurIPS, ACL, CCS, INFOCOM, etc.
     design:
       columns: '1'
 
