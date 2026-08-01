@@ -13,6 +13,17 @@ const OFFLINE_BACKEND = (() => {
 })();
 
 const OFFLINE_ACCESS = new URLSearchParams(location.search).get("access") || "";
+
+function preserveOfflineAccessInNavigation() {
+  if (!OFFLINE_ACCESS) return;
+  document.querySelectorAll(".brand, .page-nav a").forEach((anchor) => {
+    const url = new URL(anchor.href, location.href);
+    url.searchParams.set("access", OFFLINE_ACCESS);
+    anchor.href = url.href;
+  });
+}
+
+preserveOfflineAccessInNavigation();
 const OFFLINE_LABELS = Object.freeze({
   1: "Light",
   2: "Moderate",

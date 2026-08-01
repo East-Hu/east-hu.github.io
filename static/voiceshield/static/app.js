@@ -20,6 +20,17 @@ const BACKEND_BASE = (() => {
 const ACCESS_CODE = new URLSearchParams(location.search).get('access') || '';
 const REMOTE_BACKEND = BACKEND_BASE.origin !== location.origin || CONFIG.deployment === 'cloud';
 
+function preserveAccessInDemoNavigation() {
+  if (!ACCESS_CODE) return;
+  document.querySelectorAll(".brand, .page-nav a").forEach((anchor) => {
+    const url = new URL(anchor.href, location.href);
+    url.searchParams.set("access", ACCESS_CODE);
+    anchor.href = url.href;
+  });
+}
+
+preserveAccessInDemoNavigation();
+
 function backendURL(path) {
   return new URL(String(path).replace(/^\//, ''), BACKEND_BASE);
 }

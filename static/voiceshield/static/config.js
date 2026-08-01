@@ -1,4 +1,4 @@
 window.VOICESHIELD_CONFIG = Object.freeze({
-  backendUrl: "https://api.voiceshield.invalid/",
+  backendUrl: "https://beginning-firm-contracts-jewellery.trycloudflare.com/",
   deployment: "cloud",
 });
