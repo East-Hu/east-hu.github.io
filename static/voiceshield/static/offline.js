@@ -80,6 +80,8 @@ async function checkOfflineAvailability() {
     setOfflineConnection("ready", "Protection ready");
     if (offlineState.audio && offlineElement("offlineResult").classList.contains("hidden")) {
       offlineElement("offlineStatus").textContent = "Ready for full-context protection.";
+    } else if (!offlineState.audio) {
+      offlineElement("offlineStatus").textContent = "Choose or record an audio sample to begin.";
     }
   } catch (_) {
     offlineState.serviceAvailable = false;
