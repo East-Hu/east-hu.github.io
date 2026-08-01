@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08100f">
+  <meta name="referrer" content="no-referrer">
+  <title>VoiceShield Live</title>
+  <link rel="stylesheet" href="./static/styles.css?v=20260801-9">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="/voiceshield/" aria-label="VoiceShield home">
+      <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true" focusable="false">
+        <path d="M20 3.5 33 8v10.2c0 9.7-5.3 17.2-13 21.8C12.3 35.4 7 27.9 7 18.2V8l13-4.5Z" />
+        <polyline points="11,22 15,22 18,15 22,29 25,20 29,20" />
+      </svg>
+      <span>VoiceShield</span>
+    </a>
+    <nav class="page-nav" aria-label="Demo mode">
+      <a class="active" href="/voiceshield/">Live</a>
+      <a href="/voiceshield/offline.html">Offline</a>
+    </nav>
+    <div class="top-meta">
+      <span class="model-chip">LIVE VOICE PROTECTION</span>
+      <span id="connectionPill" class="connection waiting">
+        <i></i><span>Connecting</span>
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p id="deploymentEyebrow" class="eyebrow">LOCAL VOICE PRIVACY · LIVE PROTECTION</p>
+        <h1>Your voice,<br><em>protected in motion.</em></h1>
+        <p class="lede">
+          Speak naturally. Hear your protected voice in real time, then save it when you're done.
+        </p>
+      </div>
+      <div class="hero-status">
+        <span class="status-label">PRIVATE BY DESIGN</span>
+        <strong id="gpuName">Protection is ready</strong>
+        <small id="privacyLine">Audio stays on this computer.</small>
+      </div>
+    </section>
+
+    <section class="console">
+      <aside class="controls">
+        <div class="section-number">01 / SESSION</div>
+
+        <button id="recordButton" class="record-button" type="button">
+          <span class="record-icon"></span>
+          <span class="record-copy">
+            <strong id="recordAction">Start live session</strong>
+            <small id="recordHint">Allow microphone access when prompted</small>
+          </span>
+          <span class="record-arrow">↗</span>
+        </button>
+
+        <div class="timer-row">
+          <span id="sessionState" class="session-state">STANDBY</span>
+          <time id="timer">00:00.0</time>
+        </div>
+
+        <div class="field">
+          <label for="inputDevice">Microphone</label>
+          <select id="inputDevice">
+            <option value="">System default</option>
+          </select>
+        </div>
+
+        <div class="mode-control" role="group" aria-labelledby="modeLabel">
+          <div class="mode-heading">
+            <span id="modeLabel">Listening mode</span>
+            <strong id="modeStatus">Original</strong>
+          </div>
+          <div class="mode-options">
+            <button class="mode-button selected" type="button" data-mode="original" aria-pressed="true">Original</button>
+            <button class="mode-button" type="button" data-mode="protected" aria-pressed="false">Protected</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="outputDevice">Monitor output</label>
+          <select id="outputDevice">
+            <option value="">System default</option>
+          </select>
+        </div>
+
+        <div class="strength-control" role="group" aria-labelledby="strengthLabel">
+          <div class="strength-heading">
+            <span id="strengthLabel">Protection strength</span>
+            <strong id="strengthValue">Moderate</strong>
+          </div>
+          <div class="strength-options">
+            <button class="strength-button" type="button" data-strength="1" aria-pressed="false" aria-label="Protection strength 1: Light">1</button>
+            <button class="strength-button selected" type="button" data-strength="2" aria-pressed="true" aria-label="Protection strength 2: Moderate">2</button>
+            <button class="strength-button" type="button" data-strength="3" aria-pressed="false" aria-label="Protection strength 3: Balanced">3</button>
+            <button class="strength-button" type="button" data-strength="4" aria-pressed="false" aria-label="Protection strength 4: Strong">4</button>
+            <button class="strength-button" type="button" data-strength="5" aria-pressed="false" aria-label="Protection strength 5: Maximum">5</button>
+          </div>
+          <div class="strength-hints" aria-hidden="true">
+            <span>Lighter</span>
+            <span>Stronger</span>
+          </div>
+        </div>
+
+        <label class="monitor-switch">
+          <span>
+            <strong>Hear live output <b id="monitorStatus">Off</b></strong>
+            <small>Listen to Original or Protected as you speak</small>
+          </span>
+          <input id="monitorToggle" type="checkbox">
+          <i aria-hidden="true"></i>
+        </label>
+
+        <div class="headphone-note">
+          <span>HEADPHONES</span>
+          <p>Use headphones before enabling live output to prevent feedback.</p>
+        </div>
+      </aside>
+
+      <section class="scope" aria-label="Live audio waveforms">
+        <div class="scope-head">
+          <div>
+            <span class="section-number">02 / SIGNAL</span>
+            <h2>Live protection trace</h2>
+          </div>
+          <div class="scope-legend">
+            <span><i class="cyan"></i>Input</span>
+            <span><i class="orange"></i>Protected</span>
+            <span><i class="lime"></i>Difference</span>
+          </div>
+        </div>
+
+        <div class="trace trace-input">
+          <div class="trace-label"><span>MIC / INPUT</span><b id="inputPeak">0.000</b></div>
+          <canvas id="inputCanvas"></canvas>
+        </div>
+        <div class="trace trace-output">
+          <div class="trace-label"><span>SHIELD / OUTPUT</span><b id="outputPeak">0.000</b></div>
+          <canvas id="outputCanvas"></canvas>
+        </div>
+        <div class="trace trace-delta">
+          <div class="trace-label"><span>PROTECTED − INPUT</span><b id="deltaScale">×8 display gain</b></div>
+          <canvas id="deltaCanvas"></canvas>
+        </div>
+
+        <div id="contextOverlay" class="context-overlay hidden">
+          <span class="count" id="contextCount">3</span>
+          <div>
+            <strong>Preparing live protection</strong>
+            <small>Speak normally. This warm-up is not saved.</small>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="telemetry">
+      <article class="metric primary">
+        <span>PROCESSING TIME</span>
+        <strong><b id="processMS">—</b><small> ms</small></strong>
+        <p id="deadlineText">Waiting for live audio</p>
+      </article>
+      <article class="metric">
+        <span>REAL-TIME PERFORMANCE</span>
+        <strong id="rtf">—</strong>
+        <p>Live processing target</p>
+      </article>
+      <article class="metric">
+        <span>SIGNAL CHANGE</span>
+        <strong id="deltaRMS">—</strong>
+        <p>Difference from input</p>
+      </article>
+      <article class="stage-card">
+        <div><span>Voice analysis</span><b id="encMS">—</b></div>
+        <div class="meter"><i id="encBar"></i></div>
+        <div><span>Voice protection</span><b id="transMS">—</b></div>
+        <div class="meter"><i id="transBar"></i></div>
+        <div><span>Audio output</span><b id="decMS">—</b></div>
+        <div class="meter"><i id="decBar"></i></div>
+      </article>
+    </section>
+
+    <section id="resultCard" class="result-card hidden">
+      <div class="result-title">
+        <span class="section-number">03 / CAPTURE COMPLETE</span>
+        <h2>Your session is ready.</h2>
+        <p id="resultMeta">Your session recordings were saved on this computer.</p>
+      </div>
+      <div class="result-actions">
+        <audio id="resultAudio" controls></audio>
+        <a id="downloadLink" class="download-button" href="#" download>
+          Download session <span>↓</span>
+        </a>
+        <div class="session-files">
+          <a id="downloadOriginal" href="#" download>Original WAV</a>
+          <a id="downloadOutput" href="#" download>Session output WAV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Real-time protection</span>
+    <span>On-device processing</span>
+    <span>Private by design</span>
+    <span>Local processing</span>
+  </footer>
+
+  <div id="toast" class="toast hidden" role="alert"></div>
+  <script src="./static/config.js?v=20260731-6"></script>
+  <script src="./static/app.js?v=20260801-11" defer></script>
+</body>
+</html>

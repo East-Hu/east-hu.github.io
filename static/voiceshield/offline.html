@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08100f">
+  <meta name="referrer" content="no-referrer">
+  <title>VoiceShield Offline</title>
+  <link rel="stylesheet" href="./static/styles.css?v=20260801-9">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="/voiceshield/" aria-label="VoiceShield home">
+      <svg class="brand-mark" viewBox="0 0 40 44" aria-hidden="true" focusable="false">
+        <path d="M20 3.5 33 8v10.2c0 9.7-5.3 17.2-13 21.8C12.3 35.4 7 27.9 7 18.2V8l13-4.5Z" />
+        <polyline points="11,22 15,22 18,15 22,29 25,20 29,20" />
+      </svg>
+      <span>VoiceShield</span>
+    </a>
+    <nav class="page-nav" aria-label="Demo mode">
+      <a href="/voiceshield/">Live</a>
+      <a class="active" href="/voiceshield/offline.html">Offline</a>
+    </nav>
+    <div class="top-meta">
+      <span class="model-chip">FULL-CONTEXT PROTECTION</span>
+      <span id="offlineConnection" class="connection waiting">
+        <i></i><span>Connecting</span>
+      </span>
+    </div>
+  </header>
+
+  <main class="offline-main">
+    <section class="offline-hero">
+      <p class="eyebrow">03 / OFFLINE COMPARISON</p>
+      <h1>Hear the model<br><em>with full context.</em></h1>
+      <p class="lede">
+        Record a short sample or choose an audio file. VoiceShield processes the complete utterance at once for a direct listening comparison.
+      </p>
+    </section>
+
+    <section class="offline-console">
+      <div class="offline-source">
+        <div class="section-number">01 / SOURCE AUDIO</div>
+        <div class="source-actions">
+          <button id="offlineRecord" class="record-button compact" type="button">
+            <span class="record-icon"></span>
+            <span class="record-copy">
+              <strong id="offlineRecordLabel">Record a sample</strong>
+              <small id="offlineRecordHint">Use your selected microphone</small>
+            </span>
+          </button>
+          <label class="upload-card" for="offlineFile">
+            <span>UPLOAD AUDIO</span>
+            <strong id="offlineFileLabel">Choose a local file</strong>
+            <small>WAV, MP3, FLAC, OGG, AIFF, AU, or CAF</small>
+            <input id="offlineFile" type="file" accept="audio/*,.wav,.mp3,.flac,.ogg,.aiff,.aif,.au,.caf">
+          </label>
+        </div>
+        <audio id="offlineSourceAudio" class="hidden" controls></audio>
+      </div>
+
+      <div class="offline-settings">
+        <div class="section-number">02 / PROTECTION</div>
+        <div class="strength-control" role="group" aria-labelledby="offlineStrengthLabel">
+          <div class="strength-heading">
+            <span id="offlineStrengthLabel">Protection strength</span>
+            <strong id="offlineStrengthValue">Moderate</strong>
+          </div>
+          <div class="strength-options">
+            <button class="strength-button" type="button" data-offline-strength="1" aria-pressed="false">1</button>
+            <button class="strength-button selected" type="button" data-offline-strength="2" aria-pressed="true">2</button>
+            <button class="strength-button" type="button" data-offline-strength="3" aria-pressed="false">3</button>
+            <button class="strength-button" type="button" data-offline-strength="4" aria-pressed="false">4</button>
+            <button class="strength-button" type="button" data-offline-strength="5" aria-pressed="false">5</button>
+          </div>
+          <div class="strength-hints" aria-hidden="true">
+            <span>Lighter</span><span>Stronger</span>
+          </div>
+        </div>
+        <button id="offlineProcess" class="offline-process" type="button" disabled>
+          <span>Protect with full context</span><b>→</b>
+        </button>
+        <p id="offlineStatus" class="offline-status">Choose or record an audio sample to begin.</p>
+      </div>
+    </section>
+
+    <section id="offlineResult" class="offline-result hidden">
+      <div class="section-number">03 / LISTENING COMPARISON</div>
+      <div class="comparison-grid">
+        <article>
+          <span>ORIGINAL</span>
+          <h2>Source audio</h2>
+          <audio id="offlineOriginal" controls></audio>
+          <a id="offlineOriginalDownload" href="#" download>Download original WAV</a>
+        </article>
+        <article class="protected-result">
+          <span>PROTECTED</span>
+          <h2>Full-context output</h2>
+          <audio id="offlineProtected" controls></audio>
+          <a id="offlineProtectedDownload" href="#" download>Download protected WAV</a>
+        </article>
+      </div>
+      <p id="offlineResultMeta"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span>Full-context inference</span>
+    <span>On-device processing</span>
+    <span>Private by design</span>
+    <span>Local processing</span>
+  </footer>
+
+  <div id="offlineToast" class="toast hidden" role="alert"></div>
+  <script src="./static/config.js?v=20260731-6"></script>
+  <script src="./static/offline.js?v=20260801-3" defer></script>
+</body>
+</html>
