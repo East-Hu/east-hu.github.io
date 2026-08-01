@@ -44,6 +44,8 @@ const offlineState = {
   chunks: [],
   timer: null,
   startedAt: 0,
+  serviceAvailable: false,
+  availabilityTimer: null,
 };
 
 function offlineURL(path, protectedRoute = false) {
@@ -64,6 +66,31 @@ function setOfflineConnection(kind, text) {
   pill.querySelector("span").textContent = text;
 }
 
+function updateOfflineProcessAvailability() {
+  const button = offlineElement("offlineProcess");
+  button.disabled = !offlineState.audio || !offlineState.serviceAvailable ||
+    button.classList.contains("busy");
+}
+
+async function checkOfflineAvailability() {
+  try {
+    const response = await offlineFetch("/api/health", {cache: "no-store"});
+    if (!response.ok) throw new Error();
+    offlineState.serviceAvailable = true;
+    setOfflineConnection("ready", "Protection ready");
+    if (offlineState.audio && offlineElement("offlineResult").classList.contains("hidden")) {
+      offlineElement("offlineStatus").textContent = "Ready for full-context protection.";
+    }
+  } catch (_) {
+    offlineState.serviceAvailable = false;
+    setOfflineConnection("error", "Unavailable");
+    offlineElement("offlineStatus").textContent = "The protection service is unavailable.";
+  }
+  updateOfflineProcessAvailability();
+  clearTimeout(offlineState.availabilityTimer);
+  offlineState.availabilityTimer = setTimeout(checkOfflineAvailability, 3000);
+}
+
 function offlineToast(message) {
   const toast = offlineElement("offlineToast");
   toast.textContent = message;
@@ -80,8 +107,10 @@ function setSource(blob, label) {
   player.src = offlineState.audioURL;
   player.classList.remove("hidden");
   offlineElement("offlineFileLabel").textContent = label;
-  offlineElement("offlineProcess").disabled = false;
-  offlineElement("offlineStatus").textContent = "Ready for full-context protection.";
+  updateOfflineProcessAvailability();
+  offlineElement("offlineStatus").textContent = offlineState.serviceAvailable
+    ? "Ready for full-context protection."
+    : "The protection service is unavailable.";
   offlineElement("offlineResult").classList.add("hidden");
 }
 
@@ -226,8 +255,8 @@ async function processOfflineAudio() {
     offlineElement("offlineStatus").textContent = error.message;
     offlineToast(error.message);
   } finally {
-    button.disabled = !offlineState.audio;
     button.classList.remove("busy");
+    updateOfflineProcessAvailability();
   }
 }
 
@@ -251,16 +280,8 @@ offlineElement("offlineProcess").addEventListener("click", processOfflineAudio);
 
 window.addEventListener("beforeunload", () => {
   offlineState.stream?.getTracks().forEach((track) => track.stop());
+  clearTimeout(offlineState.availabilityTimer);
   if (offlineState.audioURL) URL.revokeObjectURL(offlineState.audioURL);
 });
 
-(async () => {
-  try {
-    const response = await offlineFetch("/api/health", {cache: "no-store"});
-    if (!response.ok) throw new Error();
-    setOfflineConnection("ready", "Protection ready");
-  } catch (_) {
-    setOfflineConnection("error", "Unavailable");
-    offlineElement("offlineStatus").textContent = "The local protection service is unavailable.";
-  }
-})();
+checkOfflineAvailability();

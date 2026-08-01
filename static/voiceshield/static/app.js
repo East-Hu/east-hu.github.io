@@ -91,6 +91,9 @@ const SESSION = {
   source: null,
   worklet: null,
   streamReady: false,
+  serviceAvailable: false,
+  reconnectTimer: null,
+  reconnecting: false,
   captureEnabled: false,
   recordingStartedAt: 0,
   timerHandle: null,
@@ -194,6 +197,39 @@ function setConnection(state, text) {
   UI.connection.querySelector("span").textContent = text;
 }
 
+function setServiceAvailability(available) {
+  SESSION.serviceAvailable = available;
+  UI.gpu.textContent = available ? "Protection is ready" : "Protection is not ready";
+  if (["idle", "complete"].includes(SESSION.phase)) {
+    UI.recordButton.disabled = !available;
+  }
+}
+
+function scheduleReconnect() {
+  if (!REMOTE_BACKEND || SESSION.reconnectTimer || SESSION.socket?.readyState === WebSocket.OPEN) return;
+  SESSION.reconnectTimer = setTimeout(() => {
+    SESSION.reconnectTimer = null;
+    reconnectProtectionService();
+  }, 3000);
+}
+
+async function reconnectProtectionService() {
+  if (SESSION.reconnecting || SESSION.socket?.readyState === WebSocket.OPEN) return;
+  SESSION.reconnecting = true;
+  try {
+    const response = await apiFetch("/api/health", {cache: "no-store"});
+    if (!response.ok) throw new Error(`health check returned ${response.status}`);
+    applyStreamConfig(await response.json());
+    await connectSocket();
+  } catch (_) {
+    setConnection("error", "Unavailable");
+    setServiceAvailability(false);
+    scheduleReconnect();
+  } finally {
+    SESSION.reconnecting = false;
+  }
+}
+
 function toast(message) {
   UI.toast.textContent = message;
   UI.toast.classList.remove("hidden");
@@ -277,7 +313,8 @@ function setPhase(phase) {
   UI.recordAction.textContent = copy[0];
   UI.recordHint.textContent = copy[1];
   UI.state.textContent = copy[2];
-  UI.recordButton.disabled = ["opening", "stopping"].includes(phase);
+  UI.recordButton.disabled = ["opening", "stopping"].includes(phase) ||
+    (!SESSION.serviceAvailable && ["idle", "complete"].includes(phase));
   updateControlAvailability();
 }
 
@@ -362,11 +399,15 @@ function connectSocket() {
     SESSION.socket = socket;
     socket.binaryType = "arraybuffer";
     socket.onopen = () => {
+      clearTimeout(SESSION.reconnectTimer);
+      SESSION.reconnectTimer = null;
+      setServiceAvailability(true);
       setConnection("ready", "Protection ready");
       resolve();
     };
     socket.onerror = () => {
-      setConnection("error", "Connection failed");
+      setConnection("error", REMOTE_BACKEND ? "Unavailable" : "Connection failed");
+      setServiceAvailability(false);
       reject(new Error(
         REMOTE_BACKEND
           ? "Could not connect to the protection service."
@@ -375,13 +416,15 @@ function connectSocket() {
     };
     socket.onclose = () => {
       const interrupted = SESSION.phase !== "idle" && SESSION.phase !== "complete";
-      setConnection("error", "Disconnected");
+      setConnection("error", REMOTE_BACKEND ? "Unavailable" : "Disconnected");
+      setServiceAvailability(false);
       stopAudioGraph();
       setPhase("idle");
       if (interrupted) {
         if (REMOTE_BACKEND) toast("The protection service disconnected.");
         else toast("The local protection service disconnected.");
       }
+      scheduleReconnect();
     };
     socket.onmessage = handleSocketMessage;
   });
@@ -963,9 +1006,10 @@ async function boot() {
     await connectSocket();
   } catch (error) {
     console.error("Protection service is unavailable", error);
-    setConnection("error", "Protection unavailable");
-    UI.gpu.textContent = "Protection is not ready";
+    setConnection("error", REMOTE_BACKEND ? "Unavailable" : "Protection unavailable");
+    setServiceAvailability(false);
     toast("Audio protection stopped unexpectedly");
+    scheduleReconnect();
   }
 }
 
