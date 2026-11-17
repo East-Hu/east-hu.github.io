@@ -52,6 +52,17 @@ sections:
       text: |-
         <div class="pub-card">
           <div class="pub-img">
+            <img src="/uploads/EMG-FM-Bench.png" alt="EMG-FM-Bench Pipeline">
+          </div>
+          <div class="pub-info">
+            <div class="pub-title"><a href="https://arxiv.org/pdf/2610.06450" target="_blank">EMG-FM-Bench: A Comprehensive Benchmark for Foundation Model Transfer and Adaptation on Electromyography</a></div>
+            <div class="pub-authors">Tianhao Wu, Jiawei Yu, <strong>Xiangdong Hu</strong>, Xu Wu, Hongyu Wu, Sidharth Anupkrishnan, Amirmohammad Radmehr, Yi Chen Liu, Phuc Nguyen, Yi Wu, Jian Liu</div>
+            <div class="pub-venue"><a href="https://arxiv.org/abs/2610.06450" target="_blank"><em>arXiv</em></a>, 2026</div>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-img">
             <img src="/uploads/GAMBIT.png" alt="GAMBIT Framework">
           </div>
           <div class="pub-info">
@@ -69,17 +80,6 @@ sections:
             <div class="pub-title"><a href="/uploads/BHFL.pdf" target="_blank">Straggler Mitigation and Latency Optimization in Blockchain-based Hierarchical Federated Learning</a></div>
             <div class="pub-authors">Zhilin Wang, <strong>Xiangdong Hu</strong>, Qin Hu, Minghui Xu, Zehui Xiong</div>
             <div class="pub-venue"><em>Under review for IEEE Internet of Things Journal</em></div>
-          </div>
-        </div>
-
-        <div class="pub-card">
-          <div class="pub-img">
-            <img src="/uploads/EMG-FM-Bench.png" alt="EMG-FM-Bench Pipeline">
-          </div>
-          <div class="pub-info">
-            <div class="pub-title"><a href="https://arxiv.org/pdf/2610.06450" target="_blank">EMG-FM-Bench: A Comprehensive Benchmark for Foundation Model Transfer and Adaptation on Electromyography</a></div>
-            <div class="pub-authors">Tianhao Wu, Jiawei Yu, <strong>Xiangdong Hu</strong>, Xu Wu, Hongyu Wu, Sidharth Anupkrishnan, Amirmohammad Radmehr, Yi Chen Liu, Phuc Nguyen, Yi Wu, Jian Liu</div>
-            <div class="pub-venue"><a href="https://arxiv.org/abs/2610.06450" target="_blank"><em>arXiv</em></a>, 2026</div>
           </div>
         </div>
     design:
