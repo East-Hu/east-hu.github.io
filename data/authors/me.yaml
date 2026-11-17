@@ -39,9 +39,9 @@ links:
   - icon: academicons/orcid
     url: https://orcid.org/0009-0006-2215-7844
     label: ORCID
-  - icon: hero/document-arrow-down
-    url: uploads/resume.pdf
-    label: Download CV
+  # - icon: hero/document-arrow-down
+  #   url: uploads/resume.pdf
+  #   label: Download CV
 
 interests:
   - LLMs Security & Privacy
